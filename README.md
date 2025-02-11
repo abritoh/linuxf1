@@ -567,7 +567,7 @@ Each classification serves a different aspect of system administration, from man
 
 ## **LinuxF1**
 
-**LinuxF1** is a utility website launched in 2020 to index **Linux manual pages** for CentOS, easily adaptable to other Linux distributions.
+**LinuxF1** is a utility website written in Javascript launched in 2020 to index **Linux manual pages** for CentOS, allowing fast online Linux commands searching, easily adaptable to other Linux distributions.
 
 **GitHub**: [https://github.com/abritoh/linuxf1](https://github.com/abritoh/linuxf1)
 
