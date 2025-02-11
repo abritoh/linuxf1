@@ -115,9 +115,6 @@ echo "$rsp"
 
 # 10
 # Given N integers, compute their average, rounded to three decimal places.
-# --- $(...) command substitution. It runs the command inside the parentheses and returns its output.
-# --- $((...)) performs arithmetic evaluations in Bash.
-# --- "${array[@]}" accesses all elements of an array and ensures they are treated as separate arguments.
 #
 #!/bin/bash
 read n
@@ -143,9 +140,9 @@ rsp=$(printf "%.3f\n" "$r")
 echo "$rsp"
 
 # 11
-#-- Given N lines of input, print the 3rd character from each line as a new line of output. 
-#-- It is guaranteed that each of the N lines of input will have a 3rd character.
-#-- Input Format: A text file containing N lines of ASCII characters.
+# Given N lines of input, print the 3rd character from each line as a new line of output. 
+# It is guaranteed that each of the N lines of input will have a 3rd character.
+# Input: A text file containing N lines of ASCII characters.
 #
 #!/bin/bash
 while IFS= read -r line
@@ -154,7 +151,8 @@ do
 done
 
 # 12
-#-- Display the 2nd and 7th character from each line of text.
+# Display the 2nd and 7th character from each line of text.
+#
 #!/bin/bash
 #
 while IFS= read -r line
@@ -175,13 +173,13 @@ done
 # Display the first four characters from each line of text.
 #
 #!/bin/bash
-# solution-1: 
+#-- solution-1: 
 while IFS= read -r line
 do
     echo "$line" | cut -c1-4
 done
 
-# solution-2
+#-- solution-2
 # usage:  cut -c 1-4 < file.txt
 cut -c 1-4
 
@@ -190,18 +188,13 @@ cut -c 1-4
 # 
 #!/bin/bash
 # https://www.man7.org/linux/man-pages/man1/cut.1.html
-# -f, --fields=LIST
-#               select only these fields;  also print any line that
-#               contains no delimiter character, unless the -s option is
-#               specified
 while IFS= read -r line
 do
     echo "$line" | cut -f1-3
 done
 
 # 16
-#
-#-- Print the characters from thirteenth position to the end.
+# Print the characters from thirteenth position to the end.
 #
 #!/bin/ash
 while IFS= read -r line
@@ -233,7 +226,7 @@ cut -f 2-
 # Display the first 20 lines of an input file.
 #
 #!/bin/bash
-# solution-1
+#-- solution-1
 head -n 20
-# solution-2
+#-- solution-2
 head -n 20 /dev/stdin

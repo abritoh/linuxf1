@@ -2,17 +2,20 @@
 #------------------------------------------------------------------------------------------------
 # ClusterBR (arcebrito@gmail.com) | 2025-FEB)
 #------------------------------------------------------------------------------------------------
-#INPUT:
+#
+# INPUT:
 #1. **`alias`** - Create shortcuts for longer commands.
 #   Example: `alias ll='ls -l'`
 #
 #2. **`apropos`** - Search the man pages for a keyword.  
 #   Example: `apropos copy`
-#OUTPUT:
+#
+# OUTPUT:
 #36. **`ar`** - Create, modify, and extract from archives. Example: `ar x archive.a`
 #37. **`arch`** - Display machine architecture. Example: `arch`
 #...
 #422. **`zzz`** - A placeholder command (often used in scripts).   Example: `zzz`
+#
 
 #-- input and output files
 input_file="input-linux-raw-cmds.txt"
@@ -107,5 +110,5 @@ done < "$output_f4"
 echo "$output" > "$output_f5"
 
 #------------------------------------------------------------------------------------------------
-echo "Processing COMPLETED, output saved to file: output_f5."
+echo "Processing COMPLETED, output saved to file: $output_f5."
 #------------------------------------------------------------------------------------------------

@@ -5,9 +5,11 @@
 (   ) LINUX F1    
 -"-"--------------
      ClusterBR
+
+Document version v1.0.1
 ```
 
-**Manual pages**, are an essential feature of **Unix-like operating systems**, including **Linux**. Manual pages are pre-installed and provide the official documentation and detailed descriptions of the system commands, utilities, and programming functions.
+**Manual pages**, are an essential feature of **Unix-like operating systems**, including **Linux**. Manual pages are pre-installed and contains the official documentation and detailed descriptions of the system commands, utilities, and programming functions.
 
 **Sections**: Manual pages are organized into different sections, each covering specific areas:
 
@@ -29,7 +31,9 @@
 - **EXAMPLES**: Gives practical examples of using the command.
 - **SEE ALSO**: Provides references to related commands or topics.
 
-A typical Linux distribution provides between 1000 and 2000 commands. This document compiles 422 Linux commands, each with a one-line description.
+**Bash scripting** is a powerful Linux shell feature that not only extends system management but also is widely used in areas such as **virtualization**, **containerization**, **DevOps**, **infrastructure as code (IaC)**, and more. Bash scripting is used to execute, simplify or automate: complex or time-demanding tasks, integration with cloud services, manage virtualized environments, deploy and orchestrate containers, and even create CI/CD pipelines. 
+
+**Linux distributions** (CentOS, Debian, Fedora, Red Hat, Ubuntu, Arch Linux, ...) are released with between 1,000 and 2,000 commands. This document compiles 422 Linux commands, each with a one-line description.
 
 
 ## **List of 422 Linux commands**
@@ -461,11 +465,11 @@ A typical Linux distribution provides between 1000 and 2000 commands. This docum
 ## **Linux System Components**
 
 ```bash
-                                  +---------------------+
-                                  |     Linux System    |
-                                  +---------------------+
-                                            |
-        +--------------------------+-------------------+-------------------+
+                         +---------------------+
+                         |     Linux System    |
+                         +---------------------+
+                                   |
+        +--------------------------+---------------------------------------+
         |                          |                                       |
 +------------------+        +------------------+              +---------------------+
 |  User Space      |        |  Kernel Space    |              |   System Libraries  |
@@ -511,11 +515,11 @@ A typical Linux distribution provides between 1000 and 2000 commands. This docum
 
 
 ```bash
-                                 +---------------------------+
-                                 |    Linux Commands         |
-                                 +---------------------------+
-                                            |
-        +----------------------------+-------------------+--------------+
+                        +---------------------------+
+                        |    Linux Commands         |
+                        +---------------------------+
+                                     |
+        +----------------------------+----------------------------------+
         |                            |                                  |
 +---------------------+       +---------------------+         +-------------------+
 |  File Management    |       |  Process Management |         | System Management |
@@ -567,7 +571,7 @@ Each classification serves a different aspect of system administration, from man
 
 ## **LinuxF1**
 
-**LinuxF1** is a utility website written in Javascript launched in 2020 to index **Linux manual pages** for CentOS, allowing fast online Linux commands searching, easily adaptable to other Linux distributions.
+**LinuxF1** is a utility website written in JavaScript, launched in 2020, designed to index Linux Manual Pages for various Linux distributions and link to external sources ─where Manual Pages are stored─ to display the documentation. The initial version was released to index CentOS Manual Pages, enabling fast online searches for Linux commands, and is easily configurable to index **Manual Pages** for other Linux distributions.
 
 **GitHub**: [https://github.com/abritoh/linuxf1](https://github.com/abritoh/linuxf1)
 
