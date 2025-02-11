@@ -1,0 +1,3106 @@
+## Linux commands from 001 to 100
+
+1. **`alias`** – Create shortcuts for longer commands.  
+   Example: `alias ll='ls -l'`
+
+2. **`apropos`** – Search the man pages for a keyword.  
+   Example: `apropos copy`
+
+3. **`apt-get`** – APT package handling utility (Debian/Ubuntu).  
+   Example: `sudo apt-get install vim`
+
+4. **`apt-cache`** – Query the APT cache (Debian/Ubuntu).  
+   Example: `apt-cache search vim`
+
+5. **`ar`** – Create, modify, and extract from archives.  
+   Example: `ar x archive.a`
+
+6. **`awk`** – Pattern scanning and processing language.  
+   Example: `awk '{print $1}' file.txt`
+
+7. **`basename`** – Strip directory and suffix from filenames.  
+   Example: `basename /path/to/file.txt`
+
+8. **`batch`** – Execute commands when system load levels permit.  
+   Example: `batch`
+
+9. **`bc`** – Command-line calculator.  
+   Example: `echo "5+2" | bc`
+
+10. **`bg`** – Resume a suspended job in the background.  
+    Example: `bg %1`
+
+11. **`break`** – Exit from a loop.  
+    Example: `for i in 1 2 3; do break; done`
+
+12. **`bzip2`** – Compress files using Burrows-Wheeler block sorting.  
+    Example: `bzip2 file.txt`
+
+13. **`cal`** – Display a calendar.  
+    Example: `cal 2025`
+
+14. **`cat`** – Concatenate and display file contents.  
+    Example: `cat file.txt`
+
+15. **`cd`** – Change the current directory.  
+    Example: `cd /home/user`
+
+16. **`chgrp`** – Change the group ownership of a file.  
+    Example: `chgrp group file.txt`
+
+17. **`chmod`** – Change file permissions.  
+    Example: `chmod 755 file.sh`
+
+18. **`chown`** – Change file owner and group.  
+    Example: `chown user:group file.txt`
+
+19. **`chroot`** – Change root directory for a command.  
+    Example: `chroot /newroot /bin/bash`
+
+20. **`clear`** – Clear the terminal screen.  
+    Example: `clear`
+
+21. **`cmp`** – Compare two files byte by byte.  
+    Example: `cmp file1.txt file2.txt`
+
+22. **`comm`** – Compare two sorted files line by line.  
+    Example: `comm file1.txt file2.txt`
+
+23. **`cp`** – Copy files or directories.  
+    Example: `cp file1.txt file2.txt`
+
+24. **`cron`** – Daemon to execute scheduled commands.  
+    Example: `cron`
+
+25. **`crontab`** – Edit the cron jobs for the current user.  
+    Example: `crontab -e`
+
+26. **`csplit`** – Split a file into sections based on context.  
+    Example: `csplit file.txt /pattern/ {2}`
+
+27. **`cut`** – Remove sections from each line of files.  
+    Example: `cut -d, -f1 file.csv`
+
+28. **`date`** – Display or set the system date and time.  
+    Example: `date "+%Y-%m-%d"`
+
+29. **`dc`** – Desk calculator for arbitrary precision arithmetic.  
+    Example: `echo "2 3 + p" | dc`
+
+30. **`dd`** – Copy and convert files.  
+    Example: `dd if=/dev/sda of=/dev/sdb`
+
+31. **`df`** – Report disk space usage.  
+    Example: `df -h`
+
+32. **`diff`** – Compare files line by line.  
+    Example: `diff file1.txt file2.txt`
+
+33. **`dir`** – List directory contents.  
+    Example: `dir /home/user`
+
+34. **`dircolors`** – Set terminal color schemes for `ls`.  
+    Example: `dircolors`
+
+35. **`dirname`** – Strip the last component from the file name.  
+    Example: `dirname /path/to/file.txt`
+
+36. **`dmesg`** – Print or control the kernel ring buffer.  
+    Example: `dmesg | grep error`
+
+37. **`dnf`** – Package manager for Fedora and Red Hat.  
+    Example: `sudo dnf install vim`
+
+38. **`du`** – Estimate file space usage.  
+    Example: `du -sh /home/user`
+
+39. **`echo`** – Display a line of text.  
+    Example: `echo "Hello, world!"`
+
+40. **`egrep`** – Extended regular expressions for `grep`.  
+    Example: `egrep '^test' file.txt`
+
+41. **`enable`** – Enable a shell built-in command.  
+    Example: `enable -n echo`
+
+42. **`env`** – Display environment variables.  
+    Example: `env`
+
+43. **`ethtool`** – Display or change network interface settings.  
+    Example: `ethtool eth0`
+
+44. **`exec`** – Execute a command in the current shell.  
+    Example: `exec ls -l`
+
+45. **`exit`** – Exit the shell.  
+    Example: `exit`
+
+46. **`expand`** – Convert tabs to spaces.  
+    Example: `expand file.txt`
+
+47. **`export`** – Set environment variables.  
+    Example: `export PATH=$PATH:/new/path`
+
+48. **`expr`** – Evaluate expressions.  
+    Example: `expr 3 + 2`
+
+49. **`false`** – Do nothing, return failure status.  
+    Example: `false`
+
+50. **`fdisk`** – Partition table manipulator for Linux.  
+    Example: `fdisk /dev/sda`
+
+51. **`find`** – Search for files in a directory hierarchy.  
+    Example: `find /home -name '*.txt'`
+
+52. **`finger`** – User information lookup program.  
+    Example: `finger user`
+
+53. **`fmt`** – Simple text formatter.  
+    Example: `fmt file.txt`
+
+54. **`fold`** – Wrap text to a specified width.  
+    Example: `fold -w 80 file.txt`
+
+55. **`free`** – Display memory usage.  
+    Example: `free -h`
+
+56. **`fsck`** – File system consistency check.  
+    Example: `fsck /dev/sda1`
+
+57. **`ftp`** – File Transfer Protocol client.  
+    Example: `ftp ftp.example.com`
+
+58. **`function`** – Define a function in the shell.  
+    Example: `function myfunc { echo "Hello"; }`
+
+59. **`getent`** – Get entries from databases.  
+    Example: `getent passwd user`
+
+60. **`getopt`** – Parse command-line options.  
+    Example: `getopt -o ab: file.txt`
+
+61. **`grep`** – Search for patterns in files.  
+    Example: `grep 'pattern' file.txt`
+
+62. **`groupadd`** – Add a new group.  
+    Example: `sudo groupadd mygroup`
+
+63. **`groupdel`** – Delete a group.  
+    Example: `sudo groupdel mygroup`
+
+64. **`groupmod`** – Modify a group.  
+    Example: `sudo groupmod -n newgroup oldgroup`
+
+65. **`gunzip`** – Decompress `.gz` files.  
+    Example: `gunzip file.gz`
+
+66. **`gzip`** – Compress files using the gzip algorithm.  
+    Example: `gzip file.txt`
+
+67. **`hash`** – Remember the full path of a command.  
+    Example: `hash`
+
+68. **`head`** – Output the first part of files.  
+    Example: `head -n 10 file.txt`
+
+69. **`hostname`** – Show or set the system’s hostname.  
+    Example: `hostname`
+
+70. **`iconv`** – Convert between different character encodings.  
+    Example: `iconv -f utf-8 -t iso-8859-1 file.txt`
+
+71. **`id`** – Print user and group information.  
+    Example: `id`
+
+72. **`ifconfig`** – Configure network interfaces.  
+    Example: `ifconfig eth0`
+
+73. **`ifdown`** – Shut down a network interface.  
+    Example: `sudo ifdown eth0`
+
+74. **`ifup`** – Bring a network interface up.  
+    Example: `sudo ifup eth0`
+
+75. **`iostat`** – CPU and I/O statistics.  
+    Example: `iostat`
+
+76. **`ip`** – Show/manipulate network interfaces, routing, etc.  
+    Example: `ip addr show`
+
+77. **`jobs`** – Display active jobs in the current shell.  
+    Example: `jobs`
+
+78. **`join`** – Join lines of two files on a common field.  
+    Example: `join file1.txt file2.txt`
+
+79. **`kill`** – Terminate a process.  
+    Example: `kill 1234`
+
+80. **`killall`** – Kill processes by name.  
+    Example: `killall firefox`
+
+81. **`less`** – View file contents interactively.  
+    Example: `less file.txt`
+
+82. **`ln`** – Create hard or symbolic links.  
+    Example: `ln -s /path/to/file symlink`
+
+83. **`locate`** – Find files by name using a database.  
+    Example: `locate file.txt`
+
+84. **`logname`** – Print the name of the current user.  
+    Example: `logname`
+
+85. **`ls`** – List directory contents.  
+    Example: `ls -l`
+
+86. **`lsattr`** – List file attributes on a Linux second extended file system.  
+    Example: `lsattr file.txt`
+
+87. **`lsmod`** – Show the status of modules in the Linux kernel.  
+    Example: `lsmod`
+
+88. **`lspci`** – List all PCI devices.  
+    Example: `lspci`
+
+89. **`lssubsys`** – Show system device hierarchies.  
+    Example: `lssubsys`
+
+90. **`man`** – Display the manual pages for a command.  
+    Example: `man ls`
+
+91. **`mkdir`** – Create directories.  
+    Example: `mkdir mydir`
+
+92. **`mkfifo`** – Create a named pipe (FIFO).  
+    Example: `mkfifo mypipe`
+
+93. **`mknod`** – Create a special file.  
+    Example: `mknod mydevice c 89 1`
+
+94. **`more`** – View file contents page by page.  
+    Example: `more file.txt`
+
+95. **`mount`** – Mount a file system.  
+    Example: `mount /dev/sda1 /mnt`
+
+96. **`mtr`** – Network diagnostic tool combining `ping` and `traceroute`.  
+    Example: `mtr google.com`
+
+97. **`mv`** – Move or rename files or directories.  
+    Example: `mv file.txt /path/to/destination/`
+
+98. **`nice`** – Start a process with a modified scheduling priority.  
+    Example: `nice -n 10 command`
+
+99. **`nl`** – Number lines of a file.  
+    Example: `nl file.txt`
+
+100. **`nm`** – List symbols from object files.  
+    Example: `nm /path/to/file.o`
+
+## Linux commands from 101 to 200
+
+101. **`nohup`** – Run a command immune to hangups.  
+    Example: `nohup command &`
+
+102. **`nslookup`** – Query Internet name servers interactively.  
+    Example: `nslookup google.com`
+
+103. **`od`** – Dump files in octal, hexadecimal, or ASCII.  
+    Example: `od -c file.txt`
+
+104. **`passwd`** – Change user password.  
+    Example: `passwd user`
+
+105. **`paste`** – Merge lines of files.  
+    Example: `paste file1.txt file2.txt`
+
+106. **`pathchk`** – Check the validity of a file name or path.  
+    Example: `pathchk /path/to/file`
+
+107. **`ping`** – Send ICMP echo requests to network hosts.  
+    Example: `ping google.com`
+
+108. **`pkill`** – Kill processes by name.  
+    Example: `pkill firefox`
+
+109. **`pluto`** – Network time protocol for synchronization.  
+    Example: `pluto`
+
+110. **`pr`** – Format text files for printing.  
+    Example: `pr file.txt`
+
+111. **`printenv`** – Print all or specific environment variables.  
+    Example: `printenv PATH`
+
+112. **`printf`** – Format and print data.  
+    Example: `printf "Hello, %s!\n" "world"`
+
+113. **`ps`** – Report a snapshot of current processes.  
+    Example: `ps aux`
+
+114. **`pstree`** – Display processes in a tree format.  
+    Example: `pstree`
+
+115. **`pushd`** – Save the current directory and change to a new one.  
+    Example: `pushd /home/user`
+
+116. **`pwd`** – Print the current working directory.  
+    Example: `pwd`
+
+117. **`quota`** – Display disk usage and limits for users.  
+    Example: `quota -u user`
+
+118. **`read`** – Read a line of input from standard input.  
+    Example: `read varname`
+
+119. **`reboot`** – Reboot the system.  
+    Example: `sudo reboot`
+
+120. **`renice`** – Change the priority of running processes.  
+    Example: `renice -n 10 -p 1234`
+
+121. **`rm`** – Remove files or directories.  
+    Example: `rm file.txt`
+
+122. **`rmdir`** – Remove empty directories.  
+    Example: `rmdir mydir`
+
+123. **`rsync`** – Remote file and directory synchronization.  
+    Example: `rsync -avz source/ destination/`
+
+124. **`screen`** – Terminal multiplexer to manage multiple sessions.  
+    Example: `screen`
+
+125. **`sdparm`** – Set or get device parameters.  
+    Example: `sdparm --all /dev/sda`
+
+126. **`sed`** – Stream editor for filtering and transforming text.  
+    Example: `sed 's/old/new/' file.txt`
+
+127. **`select`** – Select from a list of options.  
+    Example: `select var in option1 option2; do break; done`
+
+128. **`service`** – Start, stop, or restart system services.  
+    Example: `sudo service apache2 restart`
+
+129. **`set`** – Set or display shell variables.  
+    Example: `set var=value`
+
+130. **`shutdown`** – Shutdown the system.  
+    Example: `sudo shutdown -h now`
+
+131. **`sleep`** – Delay for a specified amount of time.  
+    Example: `sleep 5`
+
+132. **`sort`** – Sort lines in text files.  
+    Example: `sort file.txt`
+
+133. **`source`** – Read and execute commands from a file in the current shell.  
+    Example: `source ~/.bashrc`
+
+134. **`split`** – Split files into pieces.  
+    Example: `split -l 100 file.txt`
+
+135. **`ss`** – Utility to investigate sockets.  
+    Example: `ss -tuln`
+
+136. **`strace`** – Trace system calls and signals.  
+    Example: `strace -p 1234`
+
+137. **`su`** – Switch user or execute a command as another user.  
+    Example: `su - user`
+
+138. **`sudo`** – Execute commands as another user (typically root).  
+    Example: `sudo apt-get update`
+
+139. **`sum`** – Calculate file checksum and block counts.  
+    Example: `sum file.txt`
+
+140. **`symlink`** – Create symbolic links.  
+    Example: `ln -s /path/to/file symlink`
+
+141. **`tail`** – Output the last part of files.  
+    Example: `tail -n 10 file.txt`
+
+142. **`tar`** – Archive files into a tarball.  
+    Example: `tar -czvf archive.tar.gz /path/to/directory`
+
+143. **`tee`** – Read from standard input and write to standard output and files.  
+    Example: `echo "Hello" | tee file.txt`
+
+144. **`test`** – Check file types and compare values.  
+    Example: `test -e file.txt`
+
+145. **`time`** – Measure program execution time.  
+    Example: `time ls`
+
+146. **`timeout`** – Run a command with a time limit.  
+    Example: `timeout 5s command`
+
+147. **`top`** – Display tasks and resource usage in real-time.  
+    Example: `top`
+
+148. **`touch`** – Change file timestamps or create an empty file.  
+    Example: `touch file.txt`
+
+149. **`tr`** – Translate or delete characters from input.  
+    Example: `echo "abc" | tr 'a' 'x'`
+
+150. **`true`** – Do nothing, return success status.  
+    Example: `true`
+
+151. **`umask`** – Set the file mode creation mask.  
+    Example: `umask 022`
+
+152. **`umount`** – Unmount file systems.  
+    Example: `sudo umount /mnt`
+
+153. **`unzip`** – Extract files from a ZIP archive.  
+    Example: `unzip archive.zip`
+
+154. **`uptime`** – Show how long the system has been running.  
+    Example: `uptime`
+
+155. **`useradd`** – Add a new user to the system.  
+    Example: `sudo useradd user`
+
+156. **`userdel`** – Delete a user account.  
+    Example: `sudo userdel user`
+
+157. **`usermod`** – Modify a user account.  
+    Example: `sudo usermod -aG group user`
+
+158. **`uuidgen`** – Generate a new universally unique identifier (UUID).  
+    Example: `uuidgen`
+
+159. **`vdir`** – List directories in a detailed format.  
+    Example: `vdir`
+
+160. **`vi`** – A text editor.  
+    Example: `vi file.txt`
+
+161. **`view`** – View a file with `vi` in read-only mode.  
+    Example: `view file.txt`
+
+162. **`w`** – Display who is logged in and what they are doing.  
+    Example: `w`
+
+163. **`watch`** – Execute a program periodically and show output.  
+    Example: `watch df -h`
+
+164. **`wc`** – Count words, lines, and characters in files.  
+    Example: `wc file.txt`
+
+165. **`who`** – Show who is logged in.  
+    Example: `who`
+
+166. **`whoami`** – Show the current logged-in user.  
+    Example: `whoami`
+
+167. **`xargs`** – Build and execute command lines from input.  
+    Example: `echo "file1 file2" | xargs rm`
+
+168. **`yes`** – Output a string repeatedly.  
+    Example: `yes "hello"`
+
+169. **`zip`** – Package and compress files into a ZIP archive.  
+    Example: `zip archive.zip file1.txt file2.txt`
+
+170. **`zcat`** – Concatenate and display compressed files.  
+    Example: `zcat file.gz`
+
+171. **`zcmp`** – Compare compressed files.  
+    Example: `zcmp file1.gz file2.gz`
+
+172. **`zdiff`** – Compare compressed files line by line.  
+    Example: `zdiff file1.gz file2.gz`
+
+173. **`zgrep`** – Search compressed files for a pattern.  
+    Example: `zgrep "pattern" file.gz`
+
+174. **`zipinfo`** – Display detailed information about a ZIP archive.  
+    Example: `zipinfo archive.zip`
+
+175. **`zmore`** – View compressed files page by page.  
+    Example: `zmore file.gz`
+
+176. **`dstat`** – Versatile resource statistics tool.  
+    Example: `dstat`
+
+177. **`ethtool`** – Display or change network interface settings.  
+    Example: `ethtool eth0`
+
+178. **`systemctl`** – Control the systemd system and service manager.  
+    Example: `sudo systemctl restart apache2`
+
+179. **`journalctl`** – Query systemd journal logs.  
+    Example: `journalctl -u apache2`
+
+180. **`nmcli`** – Command-line interface for NetworkManager.  
+    Example: `nmcli device status`
+
+181. **`ip link`** – Show or manipulate network interfaces.  
+    Example: `ip link show`
+
+182. **`ip addr`** – Show or manipulate IP addresses.  
+    Example: `ip addr show`
+
+183. **`ip route`** – Show or manipulate IP routing.  
+    Example: `ip route show`
+
+184. **`ip rule`** – Show or manipulate routing policy database.  
+    Example: `ip rule show`
+
+185. **`iwconfig`** – Configure wireless network interfaces.  
+    Example: `iwconfig wlan0 essid "Network"`
+
+186. **`iwlist`** – Get more detailed wireless network information.  
+    Example: `iwlist wlan0 scan`
+
+187. **`ethtool`** – Display or change network device settings.  
+    Example: `ethtool eth0`
+
+188. **`traceroute`** – Trace the route packets take to a network host.  
+    Example: `traceroute google.com`
+
+189. **`nslookup`** – Query Internet DNS servers.  
+    Example: `nslookup google.com`
+
+190. **`dig`** – DNS lookup utility.  
+    Example: `dig google.com`
+
+191. **`hostnamectl`** – Control the system hostname.  
+    Example: `hostnamectl set-hostname newhostname`
+
+192. **`sudo`** – Execute commands with elevated privileges.  
+    Example: `sudo apt-get install vim`
+
+193. **`ssh`** – Secure Shell client to access remote machines.  
+    Example: `ssh user@remotehost`
+
+194. **`scp`** – Securely copy files between hosts.  
+    Example: `scp file.txt user@remotehost:/path/to/destination`
+
+195. **`rsync`** – Synchronize files and directories remotely.  
+    Example: `rsync -avz file.txt user@remotehost:/path/to/destination`
+
+196. **`sftp`** – Secure File Transfer Protocol.  
+    Example: `sftp user@remotehost`
+
+197. **`telnet`** – User interface for the Telnet protocol.  
+    Example: `telnet remotehost`
+
+198. **`wget`** – Download files from the web.  
+    Example: `wget http://example.com/file.txt`
+
+199. **`curl`** – Transfer data with URLs.  
+    Example: `curl -O http://example.com/file.txt`
+
+200. **`ftp`** – File Transfer Protocol client.  
+    Example: `ftp ftp.example.com`
+
+## Linux commands from 201 to 300
+
+201.   **`ab`** – Apache HTTP server benchmarking tool.  
+    Example: `ab -n 100 -c 10 http://localhost/`
+
+202.   **`alias`** – Create or display aliases for commands.  
+    Example: `alias ll='ls -l'`
+
+203.   **`apropos`** – Search for a keyword in the manual page descriptions.  
+    Example: `apropos copy`
+
+204.   **`apt`** – Package management system for Debian-based distributions.  
+    Example: `sudo apt update`
+
+205.   **`apt-cache`** – Query the APT package cache.  
+    Example: `apt-cache search python`
+
+206.   **`apt-get`** – Package management tool for Debian-based systems.  
+    Example: `sudo apt-get install curl`
+
+207.   **`apt-key`** – Manage keys for APT repositories.  
+    Example: `sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys <key>`
+
+208.   **`ar`** – Create, modify, and extract from archives.  
+    Example: `ar x archive.a`
+
+209.   **`arch`** – Display machine architecture.  
+    Example: `arch`
+
+210.  **`as`** – The GNU assembler.  
+    Example: `as -o file.o file.s`
+
+211.  **`at`** – Schedule a one-time task to be executed later.  
+    Example: `at 09:00 < command`
+
+212.  **`awk`** – Pattern scanning and processing language.  
+    Example: `awk '{print $1}' file.txt`
+
+213.  **`basename`** – Strip directory and suffix from filenames.  
+    Example: `basename /path/to/file.txt`
+
+214.  **`bc`** – An arbitrary precision calculator language.  
+    Example: `echo "3+2" | bc`
+
+215.  **`bg`** – Resume a suspended job in the background.  
+    Example: `bg %1`
+
+216.  **`bind`** – Show or set key bindings for the shell.  
+    Example: `bind -P`
+
+217.  **`bzip2`** – Compress files using Burrows-Wheeler block sorting.  
+    Example: `bzip2 file.txt`
+
+218.  **`cal`** – Display a calendar.  
+    Example: `cal`
+
+219.  **`cat`** – Concatenate and display file contents.  
+    Example: `cat file.txt`
+
+220.  **`cd`** – Change the current directory.  
+    Example: `cd /home/user`
+
+221.  **`chattr`** – Change file attributes on a Linux file system.  
+    Example: `chattr +i file.txt`
+
+222.  **`chmod`** – Change file permissions.  
+    Example: `chmod 755 file.txt`
+
+223.  **`chown`** – Change file owner and group.  
+    Example: `chown user:group file.txt`
+
+224.  **`chkconfig`** – Manage system services.  
+    Example: `sudo chkconfig --list`
+
+225.  **`clear`** – Clear the terminal screen.  
+    Example: `clear`
+
+226.  **`cmp`** – Compare two files byte by byte.  
+    Example: `cmp file1.txt file2.txt`
+
+227.  **`comm`** – Compare two sorted files line by line.  
+    Example: `comm file1.txt file2.txt`
+
+228.  **`cp`** – Copy files and directories.  
+    Example: `cp source.txt destination.txt`
+
+229.  **`cpio`** – Copy files to and from archives.  
+    Example: `cpio -o < files.txt`
+
+230.  **`crontab`** – Schedule periodic tasks.  
+    Example: `crontab -e`
+
+231.  **`curl`** – Transfer data from or to a server.  
+    Example: `curl -O http://example.com/file.txt`
+
+232.  **`cut`** – Remove sections from each line of files.  
+    Example: `cut -d ',' -f 1 file.csv`
+
+233. **`date`** – Display or set the system date and time.  
+    Example: `date +'%Y-%m-%d %H:%M:%S'`
+
+234. **`dc`** – Desk calculator program.  
+    Example: `echo "2 3 + p" | dc`
+
+235. **`dd`** – Convert and copy files.  
+    Example: `dd if=input.iso of=output.iso bs=4M`
+
+236. **`df`** – Report file system disk space usage.  
+    Example: `df -h`
+
+237. **`diff`** – Compare files line by line.  
+    Example: `diff file1.txt file2.txt`
+
+238. **`dig`** – DNS lookup utility.  
+    Example: `dig google.com`
+
+239. **`dir`** – List directory contents.  
+    Example: `dir`
+
+240. **`dirname`** – Strip the last component from a file name.  
+    Example: `dirname /path/to/file.txt`
+
+241. **`dmesg`** – Print or control the kernel ring buffer.  
+    Example: `dmesg | tail`
+
+242. **`du`** – Estimate file space usage.  
+    Example: `du -sh /path/to/dir`
+
+243. **`echo`** – Display a line of text.  
+    Example: `echo "Hello, world!"`
+
+244. **`egrep`** – Extended grep, search using regular expressions.  
+    Example: `egrep 'pattern' file.txt`
+
+245. **`env`** – Run a command with modified environment variables.  
+    Example: `env VAR=value command`
+
+246. **`eval`** – Evaluate and execute arguments as a command.  
+    Example: `eval echo hello`
+
+247. **`ex`** – Ex editor, part of the vi editor.  
+    Example: `ex file.txt`
+
+248. **`exec`** – Execute a command in the current shell.  
+    Example: `exec ls`
+
+249. **`exit`** – Exit the current shell or script.  
+    Example: `exit`
+
+250. **`expand`** – Convert tabs to spaces in text files.  
+    Example: `expand file.txt`
+
+251. **`expect`** – Automate interactive applications.  
+    Example: `expect script.exp`
+
+252. **`export`** – Set environment variables.  
+    Example: `export PATH=$PATH:/new/path`
+
+253. **`expr`** – Evaluate expressions.  
+    Example: `expr 2 + 2`
+
+254. **`false`** – Do nothing and return a failure status.  
+    Example: `false`
+
+255. **`fdisk`** – Partition table manipulator.  
+    Example: `sudo fdisk /dev/sda`
+
+256. **`file`** – Determine file type.  
+    Example: `file file.txt`
+
+257. **`find`** – Search for files in a directory hierarchy.  
+    Example: `find /path -name "*.txt"`
+
+258. **`finger`** – Display information about a user.  
+    Example: `finger user`
+
+259. **`fmt`** – Simple text formatter.  
+    Example: `fmt file.txt`
+
+260. **`fold`** – Wrap text to fit within specified width.  
+    Example: `fold -w 80 file.txt`
+
+261. **`for`** – Loop through a list of values.  
+    Example: `for i in {1..5}; do echo $i; done`
+
+262. **`free`** – Display memory usage.  
+    Example: `free -h`
+
+263. **`fsck`** – File system consistency check and repair.  
+    Example: `sudo fsck /dev/sda1`
+
+264. **`ftp`** – File Transfer Protocol client.  
+    Example: `ftp ftp.example.com`
+
+265. **`gcc`** – GNU C compiler.  
+    Example: `gcc -o program program.c`
+
+266. **`gdb`** – GNU debugger.  
+    Example: `gdb ./program`
+
+267. **`getfacl`** – Get file access control lists.  
+    Example: `getfacl file.txt`
+
+268. **`getent`** – Get entries from system databases.  
+    Example: `getent passwd`
+
+269. **`grep`** – Search for patterns in files.  
+    Example: `grep "pattern" file.txt`
+
+270. **`groupadd`** – Add a new group to the system.  
+    Example: `sudo groupadd groupname`
+
+271. **`groupdel`** – Delete a group from the system.  
+    Example: `sudo groupdel groupname`
+
+272. **`groupmod`** – Modify a group on the system.  
+    Example: `sudo groupmod -n newgroup oldgroup`
+
+273. **`gzip`** – Compress files using the Gzip algorithm.  
+    Example: `gzip file.txt`
+
+274. **`hash`** – Remember the full path of commands.  
+    Example: `hash ls`
+
+275. **`head`** – Output the first part of files.  
+    Example: `head -n 10 file.txt`
+
+276. **`host`** – DNS lookup utility.  
+    Example: `host google.com`
+
+277. **`hostname`** – Show or set the system’s hostname.  
+    Example: `hostname`
+
+278. **`iconv`** – Convert text from one encoding to another.  
+    Example: `iconv -f UTF-8 -t ISO-8859-1 file.txt`
+
+279. **`id`** – Print user and group ID.  
+    Example: `id user`
+
+280. **`ifconfig`** – Configure network interfaces (deprecated in favor of `ip`).  
+    Example: `ifconfig eth0`
+
+281. **`ifdown`** – Bring a network interface down.  
+    Example: `sudo ifdown eth0`
+
+282. **`ifup`** – Bring a network interface up.  
+    Example: `sudo ifup eth0`
+
+283. **`inxi`** – Display system information.  
+    Example: `inxi -Fxz`
+
+284. **`install`** – Copy files and set attributes.  
+    Example: `install -m 755 file /path/to/destination`
+
+285. **`iostat`** – Report CPU and I/O statistics.  
+    Example: `iostat -x`
+
+286. **`ip`** – Show/manipulate routing, devices, and tunnels.  
+    Example: `ip addr show`
+
+287. **`iptables`** – User-space utility for configuring Linux kernel firewall.  
+    Example: `sudo iptables -L`
+
+288. **`jobs`** – List active jobs in the current shell.  
+    Example: `jobs`
+
+289. **`join`** – Join lines of two files based on a common field.  
+    Example: `join file1.txt file2.txt`
+
+290. **`kill`** – Terminate a process.  
+    Example: `kill 1234`
+
+291. **`killall`** – Terminate processes by name.  
+    Example: `killall firefox`
+
+292. **`kmod`** – Manage kernel modules.  
+    Example: `kmod list`
+
+293. **`last`** – Show the last logins of users.  
+    Example: `last`
+
+294. **`less`** – View file contents interactively.  
+    Example: `less file.txt`
+
+295. **`ln`** – Create hard and symbolic links.  
+    Example: `ln -s /path/to/file symlink`
+
+296. **`loadkeys`** – Change the keyboard layout.  
+    Example: `loadkeys us`
+
+297. **`locate`** – Find files by name using a pre-built database.  
+    Example: `locate file.txt`
+
+298. **`logname`** – Print the current user's login name.  
+    Example: `logname`
+
+299. **`login`** – Begin a session on the system.  
+    Example: `login`
+
+300. **`ls`** – List directory contents.  
+    Example: `ls -l`
+
+## Linux commands from 301 to 400
+
+301. **`lsblk`** – List information about block devices.  
+    Example: `lsblk`
+
+302. **`lspci`** – List all PCI devices.  
+    Example: `lspci`
+
+303. **`lsscsi`** – List SCSI devices.  
+    Example: `lsscsi`
+
+304. **`lsmod`** – Show the status of kernel modules.  
+    Example: `lsmod`
+
+305. **`lsof`** – List open files.  
+    Example: `lsof -i`
+
+306. **`machinectl`** – Control local and remote containers.  
+    Example: `machinectl list`
+
+307. **`man`** – Display manual pages for commands.  
+    Example: `man ls`
+
+308. **`md5sum`** – Calculate and check MD5 checksums.  
+    Example: `md5sum file.txt`
+
+309. **`mii-tool`** – Query or control the MII status of network interfaces.  
+    Example: `mii-tool eth0`
+
+310. **`mkdir`** – Create directories.  
+    Example: `mkdir new_directory`
+
+311. **`mkfs`** – Create a file system.  
+    Example: `sudo mkfs.ext4 /dev/sda1`
+
+312. **`mknod`** – Create block or character devices.  
+    Example: `mknod /dev/mydevice b 89 1`
+
+313. **`mktemp`** – Create a temporary file or directory.  
+    Example: `mktemp`
+
+314. **`more`** – View file contents interactively.  
+    Example: `more file.txt`
+
+315. **`mount`** – Mount file systems.  
+    Example: `sudo mount /dev/sda1 /mnt`
+
+316. **`mount -o loop`** – Mount an ISO image as a file system.  
+    Example: `sudo mount -o loop file.iso /mnt`
+
+317. **`mpstat`** – Report CPU statistics.  
+    Example: `mpstat -P ALL`
+
+318. **`mv`** – Move or rename files and directories.  
+    Example: `mv old_name new_name`
+
+319. **`namei`** – Follow a path to its components.  
+    Example: `namei -l /path/to/file`
+
+320. **`nc`** – Netcat, a utility for reading from and writing to network connections.  
+    Example: `nc -l 1234`
+
+321. **`netcat`** – Another name for `nc`.  
+    Example: `netcat -z -v 192.168.1.1 1-1000`
+
+322. **`netstat`** – Display network connections, routing tables, and more.  
+    Example: `netstat -tuln`
+
+323. **`nmcli`** – Command-line interface for NetworkManager.  
+    Example: `nmcli device status`
+
+324. **`nohup`** – Run a command immune to hangups.  
+    Example: `nohup command &`
+
+325. **`nslookup`** – Query DNS records.  
+    Example: `nslookup google.com`
+
+326. **`ntpdate`** – Synchronize the system clock with a remote NTP server.  
+    Example: `sudo ntpdate time.google.com`
+
+327. **`numactrl`** – Control NUMA (Non-Uniform Memory Access) policy.  
+    Example: `numactrl --interleave=all`
+
+328. **`od`** – Dump files in octal and other formats.  
+    Example: `od -c file.txt`
+
+329. **`passwd`** – Change user password.  
+    Example: `passwd username`
+
+330. **`paste`** – Merge lines of files.  
+    Example: `paste file1.txt file2.txt`
+
+331. **`patch`** – Apply a patch file to source code.  
+    Example: `patch < patchfile.diff`
+
+332. **`pidof`** – Find the PID of a running program.  
+    Example: `pidof firefox`
+
+333. **`ping`** – Send ICMP echo requests to network hosts.  
+    Example: `ping google.com`
+
+334. **`pkill`** – Kill processes by name.  
+    Example: `pkill firefox`
+
+335. **`pl`** – Perl pager for reading output.  
+    Example: `pl file.txt`
+
+336. **`pmap`** – Display memory usage of processes.  
+    Example: `pmap 1234`
+
+337. **`popd`** – Pop a directory from the directory stack.  
+    Example: `popd`
+
+338. **`pr`** – Format text files for printing.  
+    Example: `pr file.txt`
+
+339. **`ps`** – Report process status.  
+    Example: `ps aux`
+
+340. **`pstree`** – Display processes in a tree-like format.  
+    Example: `pstree`
+
+341. **`pushd`** – Push a directory onto the directory stack.  
+    Example: `pushd /path/to/dir`
+
+342. **`pwd`** – Print the current working directory.  
+    Example: `pwd`
+
+343. **`quota`** – Display disk usage and limits.  
+    Example: `quota`
+
+344. **`quotacheck`** – Check file system disk quotas.  
+    Example: `quotacheck -avug`
+
+345. **`read`** – Read a line of input.  
+    Example: `read -p "Enter name: " name`
+
+346. **`rename`** – Rename files according to regular expressions.  
+    Example: `rename 's/.txt/.bak/' *.txt`
+
+347. **`renice`** – Alter the priority of running processes.  
+    Example: `renice -n 10 -p 1234`
+
+348. **`rm`** – Remove files or directories.  
+    Example: `rm file.txt`
+
+349. **`rmdir`** – Remove empty directories.  
+    Example: `rmdir mydir`
+
+350. **`rsync`** – Synchronize files and directories between systems.  
+    Example: `rsync -av source/ destination/`
+
+351. **`screen`** – Terminal multiplexer, allows multiple terminal sessions.  
+    Example: `screen`
+
+352. **`sdparm`** – Display and modify SCSI device parameters.  
+    Example: `sdparm --readonly /dev/sda`
+
+353. **`sed`** – Stream editor for filtering and transforming text.  
+    Example: `sed 's/old/new/g' file.txt`
+
+354. **`select`** – Select a menu item from a list (bash feature).  
+    Example: `select var in option1 option2 option3; do echo $var; done`
+
+355. **`service`** – Manage system services (deprecated in favor of `systemctl`).  
+    Example: `service apache2 restart`
+
+356. **`set`** – Set shell variables and options.  
+    Example: `set -o noclobber`
+
+357. **`sh`** – Command interpreter (shell).  
+    Example: `sh script.sh`
+
+358. **`sha256sum`** – Compute and check SHA-256 checksums.  
+    Example: `sha256sum file.txt`
+
+359. **`shutdown`** – Bring the system down.  
+    Example: `sudo shutdown -h now`
+
+360. **`sleep`** – Pause for a specified duration.  
+    Example: `sleep 5`
+
+361. **`sl`** – Steam Locomotive (funny command).  
+    Example: `sl`
+
+362. **`sort`** – Sort lines of text files.  
+    Example: `sort file.txt`
+
+363. **`source`** – Execute commands from a file in the current shell.  
+    Example: `source ~/.bashrc`
+
+364. **`stat`** – Display file or file system status.  
+    Example: `stat file.txt`
+
+365. **`strace`** – Trace system calls and signals.  
+    Example: `strace -p 1234`
+
+366. **`su`** – Switch to another user or root.  
+    Example: `su -`
+
+367. **`sudo`** – Execute a command as another user, typically root.  
+    Example: `sudo apt update`
+
+368. **`sum`** – Calculate a checksum for a file.  
+    Example: `sum file.txt`
+
+369. **`symlink`** – Create a symbolic link.  
+    Example: `ln -s target_file link_name`
+
+370. **`systemctl`** – Control the systemd system and service manager.  
+    Example: `sudo systemctl start apache2`
+
+371. **`tac`** – Concatenate and print files in reverse.  
+    Example: `tac file.txt`
+
+372. **`tail`** – Output the last part of files.  
+    Example: `tail -n 10 file.txt`
+
+373. **`tar`** – Archive files and directories.  
+    Example: `tar -czf archive.tar.gz directory/`
+
+374. **`tee`** – Read from standard input and write to standard output and files.  
+    Example: `echo "data" | tee file.txt`
+
+375. **`test`** – Check file types and compare values.  
+    Example: `test -f file.txt && echo "File exists"`
+
+376. **`time`** – Measure the time a command takes to execute.  
+    Example: `time ls`
+
+377. **`timeout`** – Run a command with a time limit.  
+    Example: `timeout 5s command`
+
+378. **`top`** – Display system tasks and processes in real-time.  
+    Example: `top`
+
+379. **`touch`** – Change file timestamps or create empty files.  
+    Example: `touch file.txt`
+
+380. **`tr`** – Translate or delete characters.  
+    Example: `echo "hello" | tr 'a-z' 'A-Z'`
+
+381. **`ts`** – Timestamp output (part of `moreutils`).  
+    Example: `echo "hello" | ts`
+
+382. **`tty`** – Print the terminal type.  
+    Example: `tty`
+
+383. **`uname`** – Print system information.  
+    Example: `uname -r`
+
+384. **`umount`** – Unmount file systems.  
+    Example: `sudo umount /mnt`
+
+385. **`unzip`** – Extract compressed ZIP files.  
+    Example: `unzip file.zip`
+
+386. **`uptime`** – Show how long the system has been running.  
+    Example: `uptime`
+
+387. **`useradd`** – Add a new user.  
+    Example: `sudo useradd newuser`
+
+388. **`userdel`** – Delete a user.  
+    Example: `sudo userdel user`
+
+389. **`usermod`** – Modify user account.  
+    Example: `sudo usermod -aG groupname username`
+
+390. **`uuidgen`** – Generate a universally unique identifier (UUID).  
+    Example: `uuidgen`
+
+391. **`vdir`** – List directory contents (with detailed info, like `ls -l`).  
+    Example: `vdir`
+
+392. **`w`** – Show who is logged in and their activity.  
+    Example: `w`
+
+393. **`wall`** – Send a message to all users.  
+    Example: `wall "System will shut down in 10 minutes"`
+
+394. **`watch`** – Execute a command periodically and show the output.  
+    Example: `watch ls`
+
+395. **`wc`** – Print the number of lines, words, and bytes of a file.  
+    Example: `wc file.txt`
+
+396. **`wget`** – Download files from the web.  
+    Example: `wget http://example.com/file.txt`
+
+397. **`whereis`** – Locate binary, source, and man pages for a command.  
+    Example: `whereis ls`
+
+398. **`which`** – Show the full path of a command.  
+    Example: `which python`
+
+399. **`who`** – Show who is logged in to the system.  
+    Example: `who`
+
+400. **`whoami`** – Print the current logged-in username.  
+    Example: `whoami`
+
+## Linux commands from 401 to 500
+
+401. **`xargs`** – Build and execute command lines from input.  
+    Example: `echo "file1 file2" | xargs cat`
+
+402. **`yes`** – Output a string repeatedly until stopped.  
+    Example: `yes "Hello World"`
+
+403. **`zcat`** – Decompress files and output their contents.  
+    Example: `zcat file.gz`
+
+404. **`zcmp`** – Compare compressed files.  
+    Example: `zcmp file1.gz file2.gz`
+
+405. **`zdiff`** – Compare compressed files line by line.  
+    Example: `zdiff file1.gz file2.gz`
+
+406. **`zegrep`** – Search compressed files with `grep`.  
+    Example: `zegrep "pattern" file.gz`
+
+407. **`zfgrep`** – Search compressed files with `fgrep`.  
+    Example: `zfgrep "pattern" file.gz`
+
+408. **`zless`** – View compressed files with `less`.  
+    Example: `zless file.gz`
+
+409. **`zmore`** – View compressed files with `more`.  
+    Example: `zmore file.gz`
+
+410. **`zip`** – Create compressed archive files.  
+    Example: `zip archive.zip file1 file2`
+
+411. **`zipcloak`** – Encrypt a ZIP archive.  
+    Example: `zipcloak archive.zip`
+
+412. **`zipsplit`** – Split a large ZIP archive into smaller files.  
+    Example: `zipsplit archive.zip`
+
+413. **`zstd`** – Fast compression algorithm, an alternative to `gzip`.  
+    Example: `zstd file.txt`
+
+414. **`zstdcat`** – Decompress `.zst` files.  
+    Example: `zstdcat file.zst`
+
+415. **`zstdgrep`** – Search inside `.zst` compressed files.  
+    Example: `zstdgrep "pattern" file.zst`
+
+416. **`zstdmt`** – Multi-threaded version of `zstd`.  
+    Example: `zstdmt -o file.zst file.txt`
+
+417. **`zsv`** – Validate `.zst` compressed files.  
+    Example: `zsv file.zst`
+
+418. **`alias`** – Create a shortcut for a command.  
+    Example: `alias ll='ls -l'`
+
+419. **`arch`** – Display the machine architecture.  
+    Example: `arch`
+
+420. **`bc`** – Command-line calculator.  
+    Example: `echo "3+5" | bc`
+
+421. **`bg`** – Resume a job in the background.  
+    Example: `bg %1`
+
+422. **`bind`** – Bind a key sequence to a specific command in the shell.  
+    Example: `bind '"\C-x": "ls -l\n"'`
+
+423. **`bzip2`** – Compress files using Burrows-Wheeler Block Sorting.  
+    Example: `bzip2 file.txt`
+
+424. **`bzcat`** – Decompress `.bz2` files.  
+    Example: `bzcat file.bz2`
+
+425. **`bzdiff`** – Compare `.bz2` files.  
+    Example: `bzdiff file1.bz2 file2.bz2`
+
+426. **`bzgrep`** – Search `.bz2` files with `grep`.  
+    Example: `bzgrep "pattern" file.bz2`
+
+427. **`bzip2recover`** – Recover data from a corrupted `.bz2` file.  
+    Example: `bzip2recover file.bz2`
+
+428. **`cal`** – Display a calendar.  
+    Example: `cal`
+
+429. **`capsh`** – Set or get capabilities for a process.  
+    Example: `capsh --print`
+
+430. **`cat`** – Concatenate and display file contents.  
+    Example: `cat file.txt`
+
+431. **`cd`** – Change the current directory.  
+    Example: `cd /home/user/`
+
+432. **`chattr`** – Change file attributes on a file system.  
+    Example: `chattr +i file.txt`
+
+433. **`chgrp`** – Change group ownership of a file.  
+    Example: `chgrp developers file.txt`
+
+434. **`chmod`** – Change file permissions.  
+    Example: `chmod 755 file.txt`
+
+435. **`chown`** – Change file owner and group.  
+    Example: `chown user:group file.txt`
+
+436. **`chroot`** – Run a command with a different root directory.  
+    Example: `chroot /mnt/new_root /bin/bash`
+
+437. **`cksum`** – Calculate a CRC checksum of a file.  
+    Example: `cksum file.txt`
+
+438. **`clear`** – Clear the terminal screen.  
+    Example: `clear`
+
+439. **`cmp`** – Compare two files byte by byte.  
+    Example: `cmp file1.txt file2.txt`
+
+440. **`comm`** – Compare two sorted files line by line.  
+    Example: `comm file1.txt file2.txt`
+
+441. **`continue`** – Resume the next iteration of a loop.  
+    Example: `continue`
+
+442. **`cp`** – Copy files and directories.  
+    Example: `cp source.txt destination.txt`
+
+443. **`cpio`** – Copy files to and from archives.  
+    Example: `cpio -o < file_list`
+
+444. **`cron`** – Daemon to execute scheduled commands.  
+    Example: `cron`
+
+445. **`crontab`** – Manage user cron jobs.  
+    Example: `crontab -e`
+
+446. **`cut`** – Remove sections from lines of files.  
+    Example: `cut -d':' -f1 /etc/passwd`
+
+447. **`date`** – Display or set the system date and time.  
+    Example: `date`
+
+448. **`dc`** – Reverse Polish notation calculator.  
+    Example: `echo "3 5 + p" | dc`
+
+449. **`dd`** – Convert and copy a file, often used for disk cloning.  
+    Example: `dd if=/dev/sda of=/dev/sdb bs=4M`
+
+450. **`df`** – Display disk space usage.  
+    Example: `df -h`
+
+451. **`diff`** – Compare files line by line.  
+    Example: `diff file1.txt file2.txt`
+
+452. **`dir`** – List directory contents in a human-readable format.  
+    Example: `dir`
+
+453. **`dircolors`** – Set color scheme for `ls` command.  
+    Example: `dircolors`
+
+454. **`dirname`** – Extract the directory path from a file.  
+    Example: `dirname /home/user/file.txt`
+
+455. **`dirs`** – Display the directory stack.  
+    Example: `dirs`
+
+456. **`du`** – Estimate file space usage.  
+    Example: `du -sh /path/to/dir`
+
+457. **`echo`** – Output text to the terminal.  
+    Example: `echo "Hello World"`
+
+458. **`egrep`** – Extended `grep`, for searching using regular expressions.  
+    Example: `egrep "pattern" file.txt`
+
+459. **`eject`** – Eject removable media like CD/DVD.  
+    Example: `eject`
+
+460. **`env`** – Display or modify the environment.  
+    Example: `env`
+
+461. **`eval`** – Execute arguments as a shell command.  
+    Example: `eval echo "Hello"`
+
+462. **`exec`** – Execute a command and replace the current process.  
+    Example: `exec ls`
+
+463. **`exit`** – Exit the shell.  
+    Example: `exit`
+
+464. **`expand`** – Convert tabs to spaces.  
+    Example: `expand file.txt`
+
+465. **`export`** – Set environment variables.  
+    Example: `export PATH=$PATH:/new/path`
+
+466. **`expr`** – Evaluate expressions.  
+    Example: `expr 5 + 3`
+
+467. **`false`** – Do nothing, return a non-zero exit code.  
+    Example: `false`
+
+468. **`fdisk`** – Partition table manipulator.  
+    Example: `fdisk /dev/sda`
+
+469. **`fg`** – Bring a background job to the foreground.  
+    Example: `fg %1`
+
+470. **`fgrep`** – Fixed-string search for `grep`.  
+    Example: `fgrep "pattern" file.txt`
+
+471. **`file`** – Determine file type.  
+    Example: `file file.txt`
+
+472. **`find`** – Search for files in a directory hierarchy.  
+    Example: `find /home -name "*.txt"`
+
+473. **`fmt`** – Simple text formatter.  
+    Example: `fmt file.txt`
+
+474. **`fold`** – Wrap text to fit within a specified width.  
+    Example: `fold -w 80 file.txt`
+
+475. **`for`** – Start a loop in the shell.  
+    Example: `for i in 1 2 3; do echo $i; done`
+
+476. **`free`** – Display memory usage.  
+    Example: `free -h`
+
+477. **`fsck`** – Check and repair file systems.  
+    Example: `sudo fsck /dev/sda1`
+
+478. **`fuser`** – Identify processes using a file.  
+    Example: `fuser file.txt`
+
+479. **`git`** – Version control system for tracking changes in files.  
+    Example: `git status`
+
+480. **`grep`** – Search for patterns in files.  
+    Example: `grep "pattern" file.txt`
+
+481. **`groups`** – Show user groups.  
+    Example: `groups username`
+
+482. **`gzip`** – Compress files using the `gzip` algorithm.  
+    Example: `gzip file.txt`
+
+483. **`hd`** – Display files in hexadecimal format.  
+    Example: `hd file.txt`
+
+484. **`head`** – Output the first part of files.  
+    Example: `head -n 10 file.txt`
+
+485. **`host`** – DNS lookup utility.  
+    Example: `host google.com`
+
+486. **`hostname`** – Show or set the system hostname.  
+    Example: `hostname`
+
+487. **`htop`** – Interactive process viewer.  
+    Example: `htop`
+
+488. **`iconv`** – Convert file encoding.  
+    Example: `iconv -f UTF-8 -t ISO-8859-1 file.txt`
+
+489. **`id`** – Display user and group information.  
+    Example: `id`
+
+490. **`ifconfig`** – Configure network interfaces (deprecated, use `ip`).  
+    Example: `ifconfig`
+
+491. **`ip`** – Show/manipulate routing, devices, and tunnels.  
+    Example: `ip addr show`
+
+492. **`ipcalc`** – Perform IP calculations.  
+    Example: `ipcalc 192.168.0.0/24`
+
+493. **`iptables`** – Manage firewall rules.  
+    Example: `sudo iptables -L`
+
+494. **`jobs`** – List active jobs.  
+    Example: `jobs`
+
+495. **`join`** – Join lines of two files on a common field.  
+    Example: `join file1.txt file2.txt`
+
+496. **`kill`** – Terminate a process.  
+    Example: `kill 1234`
+
+497. **`killall`** – Kill processes by name.  
+    Example: `killall firefox`
+
+498. **`last`** – Show the last logins of users.  
+    Example: `last`
+
+499. **`less`** – View file contents interactively.  
+    Example: `less file.txt`
+
+500. **`ln`** – Create hard and symbolic links.  
+    Example: `ln -s file.txt symlink.txt`
+
+## Linux commands from 501 to 600
+
+501. **`locate`** – Find files by name using a pre-built database.  
+    Example: `locate file.txt`
+
+502. **`logname`** – Output the name of the current user.  
+    Example: `logname`
+
+503. **`ls`** – List directory contents.  
+    Example: `ls -l`
+
+504. **`lscpu`** – Display information about the CPU architecture.  
+    Example: `lscpu`
+
+505. **`lsmod`** – Show currently loaded kernel modules.  
+    Example: `lsmod`
+
+506. **`lsof`** – List open files and their associated processes.  
+    Example: `lsof`
+
+507. **`lspci`** – List all PCI devices.  
+    Example: `lspci`
+
+508. **`lsusb`** – List all USB devices.  
+    Example: `lsusb`
+
+509. **`man`** – Display the manual page for a command.  
+    Example: `man ls`
+
+510. **`md5sum`** – Calculate and check MD5 checksums.  
+    Example: `md5sum file.txt`
+
+511. **`mkdir`** – Create a new directory.  
+    Example: `mkdir new_directory`
+
+512. **`mknod`** – Create block or character special files.  
+    Example: `mknod /dev/mydevice c 89 1`
+
+513. **`mktemp`** – Create a temporary file or directory.  
+    Example: `mktemp`
+
+514. **`more`** – View file contents one screen at a time.  
+    Example: `more file.txt`
+
+515. **`mount`** – Mount a file system.  
+    Example: `mount /dev/sda1 /mnt`
+
+516. **`mtr`** – Trace network route with ping-like statistics.  
+    Example: `mtr google.com`
+
+517. **`mv`** – Move or rename files or directories.  
+    Example: `mv oldfile.txt newfile.txt`
+
+518. **`namei`** – Follow a pathname until a leaf is found.  
+    Example: `namei /path/to/file.txt`
+
+519. **`nc`** (or `netcat`) – Network utility for reading and writing to network connections.  
+    Example: `nc -l 1234`
+
+520. **`netstat`** – Show network connections, routing tables, and interface statistics.  
+    Example: `netstat -tuln`
+
+521. **`nice`** – Run a command with modified scheduling priority.  
+    Example: `nice -n 10 command`
+
+522. **`nl`** – Number the lines of a file.  
+    Example: `nl file.txt`
+
+523. **`nohup`** – Run a command immune to hangups.  
+    Example: `nohup command &`
+
+524. **`nslookup`** – Query DNS to obtain domain name or IP address.  
+    Example: `nslookup google.com`
+
+525. **`ntpdate`** – Synchronize the system clock with remote NTP servers.  
+    Example: `sudo ntpdate pool.ntp.org`
+
+526. **`passwd`** – Change user password.  
+    Example: `passwd username`
+
+527. **`paste`** – Merge lines of files.  
+    Example: `paste file1.txt file2.txt`
+
+528. **`pg`** – View file contents with scrolling and searching.  
+    Example: `pg file.txt`
+
+529. **`pidof`** – Find the process ID of a running program.  
+    Example: `pidof firefox`
+
+530. **`ping`** – Send ICMP echo request packets to network hosts.  
+    Example: `ping google.com`
+
+531. **`pkill`** – Terminate processes by name.  
+    Example: `pkill firefox`
+
+532. **`pmap`** – Display memory map of a process.  
+    Example: `pmap 1234`
+
+533. **`popd`** – Remove directories from the directory stack.  
+    Example: `popd`
+
+534. **`poweroff`** – Shut down the system immediately.  
+    Example: `poweroff`
+
+535. **`printenv`** – Print environment variables.  
+    Example: `printenv PATH`
+
+536. **`ps`** – Display information about active processes.  
+    Example: `ps aux`
+
+537. **`pwd`** – Print the current working directory.  
+    Example: `pwd`
+
+538. **`quotacheck`** – Check disk usage for filesystem quotas.  
+    Example: `sudo quotacheck -cug /`
+
+539. **`quota`** – Display disk usage and quotas.  
+    Example: `quota`
+
+540. **`ramdisk`** – Create a RAM-based file system.  
+    Example: `ramdisk /mnt/ramdisk`
+
+541. **`reboot`** – Reboot the system.  
+    Example: `sudo reboot`
+
+542. **`renice`** – Change the priority of a running process.  
+    Example: `renice -n 10 -p 1234`
+
+543. **`reset`** – Reset the terminal.  
+    Example: `reset`
+
+544. **`rev`** – Reverse the lines of a file.  
+    Example: `rev file.txt`
+
+545. **`rm`** – Remove files or directories.  
+    Example: `rm file.txt`
+
+546. **`rmdir`** – Remove empty directories.  
+    Example: `rmdir old_directory`
+
+547. **`rsync`** – Remote file and directory synchronization.  
+    Example: `rsync -av /src/ /dest/`
+
+548. **`screen`** – Terminal multiplexer that allows multiple shell sessions.  
+    Example: `screen`
+
+549. **`sed`** – Stream editor for filtering and transforming text.  
+    Example: `sed 's/old/new/g' file.txt`
+
+550. **`shutdown`** – Shut down the system.  
+    Example: `sudo shutdown now`
+
+551. **`sleep`** – Delay for a specified time.  
+    Example: `sleep 5`
+
+552. **`sort`** – Sort lines of text files.  
+    Example: `sort file.txt`
+
+553. **`source`** – Read and execute commands from a file in the current shell.  
+    Example: `source ~/.bashrc`
+
+554. **`split`** – Split a file into pieces.  
+    Example: `split -l 1000 largefile.txt`
+
+555. **`ssh`** – Securely connect to a remote server via SSH.  
+    Example: `ssh user@hostname`
+
+556. **`stat`** – Display file or file system status.  
+    Example: `stat file.txt`
+
+557. **`stty`** – Change and print terminal line settings.  
+    Example: `stty -a`
+
+558. **`su`** – Switch to another user account.  
+    Example: `su - user`
+
+559. **`sudo`** – Execute a command with superuser privileges.  
+    Example: `sudo apt update`
+
+560. **`sum`** – Calculate checksum and block sum of files.  
+    Example: `sum file.txt`
+
+561. **`sync`** – Synchronize the file system.  
+    Example: `sync`
+
+562. **`tail`** – Output the last part of a file.  
+    Example: `tail -n 10 file.txt`
+
+563. **`tar`** – Archive files into a tarball.  
+    Example: `tar -cvf archive.tar file1 file2`
+
+564. **`tee`** – Read from standard input and write to standard output and files.  
+    Example: `echo "Hello" | tee file.txt`
+
+565. **`time`** – Measure the time a command takes to execute.  
+    Example: `time ls`
+
+566. **`timeout`** – Run a command with a time limit.  
+    Example: `timeout 5s command`
+
+567. **`top`** – Display real-time process information.  
+    Example: `top`
+
+568. **`tr`** – Translate or delete characters from the input.  
+    Example: `echo "hello" | tr 'a-z' 'A-Z'`
+
+569. **`trap`** – Set up signal handling in scripts.  
+    Example: `trap "echo Goodbye" EXIT`
+
+570. **`umask`** – Set the file mode creation mask.  
+    Example: `umask 022`
+
+571. **`unalias`** – Remove aliases.  
+    Example: `unalias ll`
+
+572. **`uname`** – Display system information.  
+    Example: `uname -a`
+
+573. **`unzip`** – Extract files from a ZIP archive.  
+    Example: `unzip archive.zip`
+
+574. **`uptime`** – Display system uptime and load averages.  
+    Example: `uptime`
+
+575. **`useradd`** – Create a new user.  
+    Example: `sudo useradd newuser`
+
+576. **`userdel`** – Delete a user.  
+    Example: `sudo userdel user`
+
+577. **`usermod`** – Modify user account information.  
+    Example: `sudo usermod -aG sudo user`
+
+578. **`uuidgen`** – Generate a UUID (Universally Unique Identifier).  
+    Example: `uuidgen`
+
+579. **`vdir`** – List directory contents in a detailed format.  
+    Example: `vdir`
+
+580. **`wc`** – Print newline, word, and byte counts for files.  
+    Example: `wc file.txt`
+
+581. **`whereis`** – Locate the binary, source, and manual pages for a command.  
+    Example: `whereis ls`
+
+582. **`which`** – Display the full path of shell commands.  
+    Example: `which ls`
+
+583. **`who`** – Show who is logged in.  
+    Example: `who`
+
+584. **`whoami`** – Display the current logged-in user.  
+    Example: `whoami`
+
+585. **`wget`** – Download files from the web.  
+    Example: `wget https://example.com/file.zip`
+
+586. **`whatis`** – Display a one-line description of a command.  
+    Example: `whatis ls`
+
+587. **`write`** – Send a message to another user.  
+    Example: `write user`
+
+588. **`xargs`** – Build and execute command lines from input.  
+    Example: `echo "file1 file2" | xargs cat`
+
+589. **`yes`** – Output a string repeatedly until stopped.  
+    Example: `yes "Hello World"`
+
+590. **`zcat`** – Decompress files and output their contents.  
+    Example: `zcat file.gz`
+
+591. **`zcmp`** – Compare compressed files.  
+    Example: `zcmp file1.gz file2.gz`
+
+592. **`zdiff`** – Compare compressed files line by line.  
+    Example: `zdiff file1.gz file2.gz`
+
+593. **`zegrep`** – Search compressed files with `grep`.  
+    Example: `zegrep "pattern" file.gz`
+
+594. **`zfgrep`** – Search compressed files with `fgrep`.  
+    Example: `zfgrep "pattern" file.gz`
+
+595. **`zless`** – View compressed files with `less`.  
+    Example: `zless file.gz`
+
+596. **`zmore`** – View compressed files with `more`.  
+    Example: `zmore file.gz`
+
+597. **`zip`** – Create compressed archive files.  
+    Example: `zip archive.zip file1 file2`
+
+598. **`zipcloak`** – Encrypt a ZIP archive.  
+    Example: `zipcloak archive.zip`
+
+599. **`zipsplit`** – Split a large ZIP archive into smaller files.  
+    Example: `zipsplit archive.zip`
+
+600. **`zstd`** – Fast compression algorithm, an alternative to `gzip`.  
+    Example: `zstd file.txt`
+
+## Linux commands from 601 to 700
+
+1.   **`ac`** – Print the total connect time for users.  
+    Example: `ac -p`
+
+2.   **`alias`** – Create an alias for a command.  
+    Example: `alias ll='ls -la'`
+
+3.   **`arch`** – Display machine architecture.  
+    Example: `arch`
+
+4.   **`at`** – Schedule a command to run at a specific time.  
+    Example: `echo "ls" | at 10:00`
+
+5.   **`atrm`** – Remove a job from the at queue.  
+    Example: `atrm 1`
+
+6.   **`basename`** – Strip directory and suffix from filenames.  
+    Example: `basename /path/to/file.txt .txt`
+
+7.   **`batch`** – Schedule commands to run when system load is low.  
+    Example: `echo "ls" | batch`
+
+8.   **`bc`** – Command-line calculator.  
+    Example: `echo "5 + 3" | bc`
+
+9.   **`bg`** – Resume a job in the background.  
+    Example: `bg %1`
+
+10.  **`bzip2`** – Compress files using Burrows-Wheeler algorithm.  
+    Example: `bzip2 file.txt`
+
+611. **`bzcat`** – Decompress files compressed with bzip2.  
+    Example: `bzcat file.txt.bz2`
+
+612. **`bzcmp`** – Compare bzip2 compressed files.  
+    Example: `bzcmp file1.bz2 file2.bz2`
+
+613. **`bzdiff`** – Compare bzip2 compressed files line by line.  
+    Example: `bzdiff file1.bz2 file2.bz2`
+
+614. **`bzgrep`** – Search within bzip2 compressed files.  
+    Example: `bzgrep "pattern" file.bz2`
+
+615. **`bzip2recover`** – Recover data from a corrupted bzip2 file.  
+    Example: `bzip2recover file.txt.bz2`
+
+616. **`cal`** – Display a calendar.  
+    Example: `cal 2025`
+
+617. **`cancel`** – Cancel a print job.  
+    Example: `cancel 123`
+
+618. **`cat`** – Concatenate and display files.  
+    Example: `cat file.txt`
+
+619. **`chattr`** – Change file attributes on a Linux file system.  
+    Example: `chattr +i file.txt`
+
+620. **`chcon`** – Change the SELinux security context of a file.  
+    Example: `chcon -t httpd_sys_content_t file.txt`
+
+621. **`chgrp`** – Change the group ownership of a file.  
+    Example: `chgrp admin file.txt`
+
+622. **`chmod`** – Change the file permissions.  
+    Example: `chmod 755 file.sh`
+
+623. **`chown`** – Change file owner and group.  
+    Example: `chown user:group file.txt`
+
+624. **`chroot`** – Change root directory for the current process.  
+    Example: `chroot /newroot`
+
+625. **`cksum`** – Compute CRC checksum and byte count of a file.  
+    Example: `cksum file.txt`
+
+626. **`clear`** – Clear the terminal screen.  
+    Example: `clear`
+
+627. **`cmp`** – Compare two files byte by byte.  
+    Example: `cmp file1.txt file2.txt`
+
+628. **`comm`** – Compare two sorted files line by line.  
+    Example: `comm file1.txt file2.txt`
+
+629. **`consoletype`** – Display the type of terminal in use.  
+    Example: `consoletype`
+
+630. **`cp`** – Copy files or directories.  
+    Example: `cp file1.txt file2.txt`
+
+631. **`cpio`** – Copy files to and from archives.  
+    Example: `find . | cpio -o > archive.cpio`
+
+632. **`crontab`** – Schedule recurring jobs using cron.  
+    Example: `crontab -e`
+
+633. **`ctrlaltdel`** – Reboot the system using a keyboard shortcut.  
+    Example: `ctrlaltdel`
+
+634. **`curl`** – Transfer data from or to a server using various protocols.  
+    Example: `curl -O http://example.com/file`
+
+635. **`cut`** – Remove sections from each line of files.  
+    Example: `cut -f 1,3 file.txt`
+
+636. **`date`** – Display or set the system date and time.  
+    Example: `date "+%Y-%m-%d"`
+
+637. **`dc`** – An arbitrary precision reverse-polish calculator.  
+    Example: `dc`
+
+638. **`declare`** – Declare variables and their attributes.  
+    Example: `declare -i num=10`
+
+639. **`df`** – Display free disk space.  
+    Example: `df -h`
+
+640. **`diff`** – Compare files line by line.  
+    Example: `diff file1.txt file2.txt`
+
+641. **`diff3`** – Compare three files line by line.  
+    Example: `diff3 file1.txt file2.txt file3.txt`
+
+642. **`dig`** – DNS lookup utility.  
+    Example: `dig google.com`
+
+643. **`dir`** – List directory contents.  
+    Example: `dir`
+
+644. **`dircolors`** – Set the color scheme for `ls`.  
+    Example: `dircolors`
+
+645. **`dirname`** – Extract the directory part of a path.  
+    Example: `dirname /path/to/file.txt`
+
+646. **`dirs`** – Display the directory stack.  
+    Example: `dirs`
+
+647. **`dmesg`** – Print or control the kernel ring buffer.  
+    Example: `dmesg`
+
+648. **`dnf`** – Package manager for RPM-based systems (Fedora, RHEL).  
+    Example: `dnf install package`
+
+649. **`docker`** – Manage Docker containers and images.  
+    Example: `docker run hello-world`
+
+650. **`dpkg`** – Debian package manager for installing, removing, and querying packages.  
+    Example: `dpkg -i package.deb`
+
+651. **`du`** – Estimate file space usage.  
+    Example: `du -sh`
+
+652. **`echo`** – Display a line of text.  
+    Example: `echo "Hello World"`
+
+653. **`egrep`** – Extended version of `grep` that supports extended regular expressions.  
+    Example: `egrep 'pattern' file.txt`
+
+654. **`enable`** – Enable shell built-in commands.  
+    Example: `enable -n echo`
+
+655. **`env`** – Display or set environment variables.  
+    Example: `env`
+
+656. **`ethtool`** – Display or change Ethernet device settings.  
+    Example: `ethtool eth0`
+
+657. **`eval`** – Evaluate and execute arguments as a shell command.  
+    Example: `eval echo \$HOME`
+
+658. **`exec`** – Execute a command and replace the current process.  
+    Example: `exec ls`
+
+659. **`exit`** – Exit the current shell or script.  
+    Example: `exit`
+
+660. **`expand`** – Convert tabs to spaces.  
+    Example: `expand file.txt`
+
+661. **`export`** – Set environment variables for child processes.  
+    Example: `export PATH=$PATH:/new/path`
+
+662. **`expr`** – Evaluate expressions.  
+    Example: `expr 5 + 3`
+
+663. **`fakechroot`** – Run a command with fake root privileges.  
+    Example: `fakechroot ls`
+
+664. **`fc`** – Fix or re-edit commands from the history.  
+    Example: `fc`
+
+665. **`fdisk`** – Partition table manipulator.  
+    Example: `fdisk /dev/sda`
+
+666. **`fg`** – Bring a job to the foreground.  
+    Example: `fg %1`
+
+667. **`fgrep`** – Search for fixed strings in files.  
+    Example: `fgrep "pattern" file.txt`
+
+668. **`file`** – Determine the file type.  
+    Example: `file file.txt`
+
+669. **`find`** – Search for files in a directory hierarchy.  
+    Example: `find / -name file.txt`
+
+670. **`fmt`** – Format text into a specified width.  
+    Example: `fmt file.txt`
+
+671. **`fold`** – Wrap text to fit a specific width.  
+    Example: `fold -w 80 file.txt`
+
+672. **`for`** – Loop through a sequence of commands.  
+    Example: `for i in 1 2 3; do echo $i; done`
+
+673. **`free`** – Display memory usage.  
+    Example: `free -h`
+
+674. **`fsck`** – Check and repair a file system.  
+    Example: `sudo fsck /dev/sda1`
+
+675. **`ftp`** – File Transfer Protocol client.  
+    Example: `ftp ftp.example.com`
+
+676. **`function`** – Define a function in a shell script.  
+    Example: `function my_func { echo "Hello"; }`
+
+677. **`fuser`** – Identify processes using files or sockets.  
+    Example: `fuser /dev/sda1`
+
+678. **`g++`** – GNU C++ compiler.  
+    Example: `g++ file.cpp -o file`
+
+679. **`gawk`** – Pattern scanning and processing language.  
+    Example: `gawk '{print $1}' file.txt`
+
+680. **`gcc`** – GNU C Compiler.  
+    Example: `gcc file.c -o file`
+
+681. **`gedit`** – GUI text editor for GNOME.  
+    Example: `gedit file.txt`
+
+682. **`getent`** – Get entries from a system database.  
+    Example: `getent passwd`
+
+683. **`getopts`** – Parse positional parameters in a shell script.  
+    Example: `getopts "a:b:" opt`
+
+684. **`git`** – Version control system.  
+    Example: `git clone https://github.com/repo.git`
+
+685. **`grep`** – Search for patterns in files.  
+    Example: `grep "pattern" file.txt`
+
+686. **`groupadd`** – Create a new group.  
+    Example: `sudo groupadd groupname`
+
+687. **`groupdel`** – Delete a group.  
+    Example: `sudo groupdel groupname`
+
+688. **`groupmod`** – Modify a group.  
+    Example: `sudo groupmod -n newname oldname`
+
+689. **`groups`** – Show the groups a user belongs to.  
+    Example: `groups username`
+
+690. **`gzip`** – Compress files using the GNU zip algorithm.  
+    Example: `gzip file.txt`
+
+691. **`hash`** – Show or update the internal hash table for commands.  
+    Example: `hash -r`
+
+692. **`head`** – Output the first part of a file.  
+    Example: `head file.txt`
+
+693. **`history`** – Show the history of commands used in the shell.  
+    Example: `history`
+
+694. **`hostname`** – Display or set the system's hostname.  
+    Example: `hostname`
+
+695. **`htop`** – Interactive process viewer.  
+    Example: `htop`
+
+696. **`iconv`** – Convert text file encoding.  
+    Example: `iconv -f UTF-8 -t ISO-8859-1 file.txt`
+
+697. **`id`** – Print user and group information.  
+    Example: `id username`
+
+698. **`ifconfig`** – Configure network interfaces.  
+    Example: `ifconfig eth0`
+
+699. **`inotifywait`** – Wait for changes to files using inotify.  
+    Example: `inotifywait /path/to/file`
+
+700. **`install`** – Copy files and set attributes.  
+    Example: `install -m 755 file /usr/local/bin/`
+
+## Linux commands (from 701 to 800)
+
+701. **`iotop`** – Display real-time I/O usage by processes.  
+    Example: `iotop`
+
+702. **`ip`** – Show/manipulate routing, devices, policy routing, and tunnels.  
+    Example: `ip a`
+
+703. **`ip addr`** – Show IP addresses of all network interfaces.  
+    Example: `ip addr`
+
+704. **`ip link`** – Show or change network device attributes.  
+    Example: `ip link set eth0 up`
+
+705. **`ip route`** – Show or manipulate the IP routing table.  
+    Example: `ip route show`
+
+706. **`ip rule`** – Show or manipulate routing rules.  
+    Example: `ip rule show`
+
+707. **`ip tunnel`** – Show or configure tunnels.  
+    Example: `ip tunnel add tun0 mode gre remote 192.168.1.1 local 192.168.1.2`
+
+708. **`isoinfo`** – Display information about ISO-9660 filesystems.  
+    Example: `isoinfo -i file.iso -d`
+
+709. **`iw`** – Show or manipulate wireless devices and settings.  
+    Example: `iw dev wlan0 link`
+
+710. **`iwconfig`** – Configure wireless network interfaces.  
+    Example: `iwconfig wlan0 essid "NetworkName"`
+
+711. **`journalctl`** – Query and display logs from the systemd journal.  
+    Example: `journalctl -xe`
+
+712. **`join`** – Join lines of two files on a common field.  
+    Example: `join file1.txt file2.txt`
+
+713. **`jobs`** – List active jobs in the current shell session.  
+    Example: `jobs`
+
+714. **`jq`** – Command-line JSON processor.  
+    Example: `jq '.name' file.json`
+
+715. **`kill`** – Send a signal to a process (default is SIGTERM).  
+    Example: `kill 1234`
+
+716. **`killall`** – Kill processes by name.  
+    Example: `killall firefox`
+
+717. **`kmod`** – Load, unload, and manage kernel modules.  
+    Example: `kmod list`
+
+718. **`less`** – View file contents interactively.  
+    Example: `less file.txt`
+
+719. **`let`** – Perform arithmetic operations in the shell.  
+    Example: `let x=5+3`
+
+720. **`ln`** – Create links to files.  
+    Example: `ln -s /path/to/file linkname`
+
+721. **`local`** – Declare local variables in shell functions.  
+    Example: `local var=10`
+
+722. **`locate`** – Find files by name using a prebuilt database.  
+    Example: `locate file.txt`
+
+723. **`logname`** – Print the name of the current user.  
+    Example: `logname`
+
+724. **`lshw`** – Display detailed hardware information.  
+    Example: `lshw -short`
+
+725. **`lsblk`** – List information about block devices.  
+    Example: `lsblk`
+
+726. **`lsmod`** – Show the status of modules in the Linux kernel.  
+    Example: `lsmod`
+
+727. **`lspci`** – List all PCI devices.  
+    Example: `lspci`
+
+728. **`lsusb`** – List USB devices connected to the system.  
+    Example: `lsusb`
+
+729. **`man`** – Display the manual for a command.  
+    Example: `man ls`
+
+730. **`mkdir`** – Create directories.  
+    Example: `mkdir new_directory`
+
+731. **`mkfs`** – Create a file system on a device.  
+    Example: `mkfs.ext4 /dev/sda1`
+
+732. **`mkisofs`** – Create an ISO 9660 filesystem image.  
+    Example: `mkisofs -o image.iso /path/to/files`
+
+733. **`mknod`** – Create block or character device files.  
+    Example: `mknod /dev/mydevice c 10 200`
+
+734. **`more`** – View the contents of a file (similar to less).  
+    Example: `more file.txt`
+
+735. **`mount`** – Mount a file system.  
+    Example: `mount /dev/sda1 /mnt`
+
+736. **`mount -o loop`** – Mount a file as a virtual file system.  
+    Example: `mount -o loop file.iso /mnt`
+
+737. **`mpstat`** – Display CPU usage statistics.  
+    Example: `mpstat`
+
+738. **`mtr`** – Network diagnostic tool combining traceroute and ping.  
+    Example: `mtr google.com`
+
+739. **`namei`** – Follow a pathname until a file is found.  
+    Example: `namei -l /path/to/file`
+
+740. **`nano`** – Command-line text editor.  
+    Example: `nano file.txt`
+
+741. **`nc`** – Netcat, a versatile networking tool.  
+    Example: `nc -l 1234`
+
+742. **`netcat`** – Another name for `nc`, useful for networking.  
+    Example: `netcat -l 1234`
+
+743. **`netstat`** – Display network connections, routing tables, and interface statistics.  
+    Example: `netstat -tuln`
+
+744. **`newgrp`** – Log in to a new group.  
+    Example: `newgrp staff`
+
+745. **`nmcli`** – Command-line interface for NetworkManager.  
+    Example: `nmcli device status`
+
+746. **`nohup`** – Run a command immune to hangups.  
+    Example: `nohup command &`
+
+747. **`nslookup`** – Query Internet name servers interactively.  
+    Example: `nslookup google.com`
+
+748. **`numactrl`** – Control NUMA policy for processes.  
+    Example: `numactrl --interleave=all command`
+
+749. **`od`** – Dump files in octal and other formats.  
+    Example: `od -x file.txt`
+
+750. **`parted`** – A command-line partition manipulation program.  
+    Example: `parted /dev/sda`
+
+751. **`passwd`** – Change a user’s password.  
+    Example: `passwd username`
+
+752. **`paste`** – Merge lines of files.  
+    Example: `paste file1.txt file2.txt`
+
+753. **`patch`** – Apply a patch file to a program’s source code.  
+    Example: `patch < patchfile`
+
+754. **`pidof`** – Find the process ID of a running program.  
+    Example: `pidof bash`
+
+755. **`ping`** – Send ICMP echo requests to a host.  
+    Example: `ping google.com`
+
+756. **`pkill`** – Send signals to processes by name.  
+    Example: `pkill firefox`
+
+757. **`pmount`** – Mount removable devices automatically.  
+    Example: `pmount /dev/sdb1`
+
+758. **`popd`** – Remove directories from the stack.  
+    Example: `popd`
+
+759. **`pr`** – Paginate or columnate files for printing.  
+    Example: `pr file.txt`
+
+760. **`printenv`** – Display environment variables.  
+    Example: `printenv PATH`
+
+761. **`ps`** – Report a snapshot of current processes.  
+    Example: `ps aux`
+
+762. **`ptables`** – Display current network port tables.  
+    Example: `ptables`
+
+763. **`pwd`** – Print the current working directory.  
+    Example: `pwd`
+
+764. **`quota`** – Display disk usage and quotas.  
+    Example: `quota`
+
+765. **`quotacheck`** – Check and repair disk quotas.  
+    Example: `quotacheck -c`
+
+766. **`reboot`** – Reboot the system.  
+    Example: `reboot`
+
+767. **`rename`** – Rename multiple files using regular expressions.  
+    Example: `rename 's/.txt/.bak/' *.txt`
+
+768. **`reorder`** – Reorder the lines in a file based on a key.  
+    Example: `reorder file.txt`
+
+769. **`reset`** – Reset the terminal to its default settings.  
+    Example: `reset`
+
+770. **`resize`** – Set terminal window size.  
+    Example: `resize`
+
+771. **`rev`** – Reverse the lines of a file.  
+    Example: `rev file.txt`
+
+772. **`rm`** – Remove files or directories.  
+    Example: `rm file.txt`
+
+773. **`rmdir`** – Remove empty directories.  
+    Example: `rmdir dir_name`
+
+774. **`rsync`** – Remote and local file synchronization.  
+    Example: `rsync -av source/ destination/`
+
+775. **`runlevel`** – Show the current runlevel.  
+    Example: `runlevel`
+
+776. **`scp`** – Copy files over SSH.  
+    Example: `scp file.txt user@remote:/path`
+
+777. **`screen`** – Terminal multiplexer.  
+    Example: `screen`
+
+778. **`sd`** – Stream editor (a more minimal version of `sed`).  
+    Example: `sd 'old' 'new' file.txt`
+
+779. **`sed`** – Stream editor for transforming text.  
+    Example: `sed 's/old/new/g' file.txt`
+
+780. **`select`** – Create a menu from which the user can select an option.  
+    Example: `select var in option1 option2; do echo $var; done`
+
+781. **`set`** – Set shell options or positional parameters.  
+    Example: `set -o noclobber`
+
+782. **`sh`** – Execute commands from a script file or interactively.  
+    Example: `sh script.sh`
+
+783. **`sha256sum`** – Compute SHA-256 checksums.  
+    Example: `sha256sum file.txt`
+
+784. **`shutdown`** – Shut down or restart the system.  
+    Example: `shutdown -h now`
+
+785. **`sleep`** – Delay for a specified amount of time.  
+    Example: `sleep 5`
+
+786. **`sl`** – Play a steam locomotive animation (fun command).  
+    Example: `sl`
+
+787. **`sort`** – Sort lines of text files.  
+    Example: `sort file.txt`
+
+788. **`source`** – Execute commands from a file in the current shell.  
+    Example: `source ~/.bashrc`
+
+789. **`split`** – Split a file into pieces.  
+    Example: `split -l 1000 file.txt`
+
+790. **`ssh`** – Secure shell client for remote connections.  
+    Example: `ssh user@remote`
+
+791. **`strace`** – Trace system calls and signals.  
+    Example: `strace ls`
+
+792. **`su`** – Switch user identity.  
+    Example: `su -`
+
+793. **`sudo`** – Execute a command as another user, typically root.  
+    Example: `sudo apt update`
+
+794. **`sum`** – Calculate checksum and block size of a file.  
+    Example: `sum file.txt`
+
+795. **`sync`** – Flush file system buffers to disk.  
+    Example: `sync`
+
+796. **`sysctl`** – Configure kernel parameters at runtime.  
+    Example: `sysctl net.ipv4.ip_forward=1`
+
+797. **`tac`** – Concatenate and print files in reverse.  
+    Example: `tac file.txt`
+
+798. **`tail`** – Output the last part of a file.  
+    Example: `tail -n 10 file.txt`
+
+799. **`tar`** – Archive files to and from a tarball.  
+    Example: `tar -czvf archive.tar.gz /path/to/files`
+
+800. **`tee`** – Read from standard input and write to standard output and files.  
+    Example: `echo "Hello" | tee file.txt`
+
+## Linux commands from 801 to 900
+
+801. **`timeout`** – Run a command with a time limit.  
+    Example: `timeout 5s command`
+
+802. **`top`** – Display real-time system processes.  
+    Example: `top`
+
+803. **`tr`** – Translate or delete characters.  
+    Example: `echo "hello" | tr 'a-z' 'A-Z'`
+
+804. **`tracepath`** – Traceroute with automatic MTU discovery.  
+    Example: `tracepath google.com`
+
+805. **`tree`** – Display directory structure as a tree.  
+    Example: `tree /path`
+
+806. **`type`** – Display information about a command type.  
+    Example: `type ls`
+
+807. **`ulimit`** – Get or set user resource limits.  
+    Example: `ulimit -a`
+
+808. **`umask`** – Set file creation permissions.  
+    Example: `umask 022`
+
+809. **`unzip`** – Extract files from a zip archive.  
+    Example: `unzip archive.zip`
+
+810. **`uptime`** – Show how long the system has been running.  
+    Example: `uptime`
+
+811. **`useradd`** – Add a new user.  
+    Example: `useradd username`
+
+812. **`usermod`** – Modify a user account.  
+    Example: `usermod -aG sudo username`
+
+813. **`userdel`** – Delete a user.  
+    Example: `userdel username`
+
+814. **`vdir`** – List directory contents in a verbose way.  
+    Example: `vdir /path`
+
+815. **`wc`** – Print line, word, and byte counts for a file.  
+    Example: `wc file.txt`
+
+816. **`wget`** – Download files from the web.  
+    Example: `wget http://example.com/file.txt`
+
+817. **`which`** – Show the full path of shell commands.  
+    Example: `which python`
+
+818. **`who`** – Show who is logged in.  
+    Example: `who`
+
+819. **`whoami`** – Print the current user’s name.  
+    Example: `whoami`
+
+820. **`w`** – Show who is logged in and what they are doing.  
+    Example: `w`
+
+821. **`xargs`** – Build and execute command lines from standard input.  
+    Example: `echo "file1 file2" | xargs rm`
+
+822. **`xdg-open`** – Open a file or URL in the user's preferred application.  
+    Example: `xdg-open http://example.com`
+
+823. **`yes`** – Output a string repeatedly until killed.  
+    Example: `yes "Hello"`
+
+824. **`zcat`** – Decompress files to stdout.  
+    Example: `zcat file.gz`
+
+825. **`zip`** – Package and compress files into a zip archive.  
+    Example: `zip archive.zip file1 file2`
+
+826. **`zgrep`** – Search through compressed files with grep.  
+    Example: `zgrep "pattern" file.gz`
+
+827. **`zless`** – View compressed files with less.  
+    Example: `zless file.gz`
+
+828. **`zmore`** – View compressed files with more.  
+    Example: `zmore file.gz`
+
+829. **`zsh`** – Z shell, an extended Bourne shell with many features.  
+    Example: `zsh`
+
+830. **`alias`** – Create shortcuts for commands.  
+    Example: `alias ll='ls -l'`
+
+831. **`unalias`** – Remove alias definitions.  
+    Example: `unalias ll`
+
+832. **`at`** – Schedule a command to run once at a specified time.  
+    Example: `echo "command" | at 14:00`
+
+833. **`batch`** – Schedule commands to run when the system load is low.  
+    Example: `echo "command" | batch`
+
+834. **`chgrp`** – Change the group ownership of a file or directory.  
+    Example: `chgrp staff file.txt`
+
+835. **`chown`** – Change the ownership of a file or directory.  
+    Example: `chown user:group file.txt`
+
+836. **`chmod`** – Change the permissions of a file or directory.  
+    Example: `chmod 755 file.txt`
+
+837. **`chroot`** – Change root directory for the current running process.  
+    Example: `chroot /new_root`
+
+838. **`cmp`** – Compare two files byte by byte.  
+    Example: `cmp file1.txt file2.txt`
+
+839. **`comm`** – Compare two sorted files line by line.  
+    Example: `comm file1.txt file2.txt`
+
+840. **`cp`** – Copy files or directories.  
+    Example: `cp file1.txt file2.txt`
+
+841. **`cpio`** – Copy files to and from archives.  
+    Example: `cpio -id < archive.cpio`
+
+842. **`cut`** – Remove sections from each line of a file.  
+    Example: `cut -f1,2 file.txt`
+
+843. **`df`** – Display disk space usage for file systems.  
+    Example: `df -h`
+
+844. **`diff`** – Compare files line by line.  
+    Example: `diff file1.txt file2.txt`
+
+845. **`dir`** – List directory contents in a format similar to `ls`.  
+    Example: `dir`
+
+846. **`dircolors`** – Set color schemes for `ls` and other commands.  
+    Example: `dircolors`
+
+847. **`dirname`** – Extract the directory part of a pathname.  
+    Example: `dirname /path/to/file.txt`
+
+848. **`dmesg`** – Display boot messages and kernel logs.  
+    Example: `dmesg | grep error`
+
+849. **`du`** – Display disk usage of files and directories.  
+    Example: `du -sh /path`
+
+850. **`echo`** – Display a line of text or a variable value.  
+    Example: `echo "Hello, world!"`
+
+851. **`env`** – Display or set environment variables.  
+    Example: `env`
+
+852. **`expand`** – Convert tabs to spaces in a file.  
+    Example: `expand file.txt`
+
+853. **`expr`** – Evaluate expressions.  
+    Example: `expr 5 + 3`
+
+854. **`factor`** – Factorize a number.  
+    Example: `factor 28`
+
+855. **`false`** – Do nothing and return a false exit status.  
+    Example: `false`
+
+856. **`fdisk`** – Partition a disk.  
+    Example: `fdisk /dev/sda`
+
+857. **`file`** – Determine file type.  
+    Example: `file file.txt`
+
+858. **`find`** – Search for files in a directory hierarchy.  
+    Example: `find /path -name "*.txt"`
+
+859. **`fmt`** – Format text files for readability.  
+    Example: `fmt file.txt`
+
+860. **`fold`** – Wrap each line to fit within a specified width.  
+    Example: `fold -w 50 file.txt`
+
+861. **`for`** – Loop construct in shell scripts.  
+    Example: `for i in $(seq 1 5); do echo $i; done`
+
+862. **`free`** – Display memory usage.  
+    Example: `free -h`
+
+863. **`grep`** – Search for patterns in files.  
+    Example: `grep "pattern" file.txt`
+
+864. **`groupadd`** – Add a new group.  
+    Example: `groupadd newgroup`
+
+865. **`groupdel`** – Delete a group.  
+    Example: `groupdel oldgroup`
+
+866. **`groups`** – Show which groups a user is a member of.  
+    Example: `groups username`
+
+867. **`gzip`** – Compress files using the gzip algorithm.  
+    Example: `gzip file.txt`
+
+868. **`halt`** – Halt the system immediately.  
+    Example: `halt`
+
+869. **`head`** – Output the first part of a file.  
+    Example: `head -n 10 file.txt`
+
+870. **`hostname`** – Show or set the system hostname.  
+    Example: `hostname`
+
+871. **`htop`** – Interactive process viewer (an enhanced version of `top`).  
+    Example: `htop`
+
+872. **`iostat`** – Show CPU and I/O statistics.  
+    Example: `iostat`
+
+873. **`ip link`** – Display and configure network devices.  
+    Example: `ip link show`
+
+874. **`ip addr`** – Display network interfaces and their IP addresses.  
+    Example: `ip addr show`
+
+875. **`ip route`** – Display or modify IP routing tables.  
+    Example: `ip route show`
+
+876. **`ip rule`** – Show or modify routing rules.  
+    Example: `ip rule show`
+
+877. **`iptables`** – User-space utility for configuring Linux kernel firewall.  
+    Example: `iptables -A INPUT -p tcp --dport 22 -j ACCEPT`
+
+878. **`is`** – List information about a file or directory.  
+    Example: `is file.txt`
+
+879. **`jobs`** – Display the list of active jobs.  
+    Example: `jobs`
+
+880. **`join`** – Join lines of two files based on a common field.  
+    Example: `join file1.txt file2.txt`
+
+881. **`kill`** – Send a signal to terminate a process.  
+    Example: `kill 1234`
+
+882. **`killall`** – Terminate processes by name.  
+    Example: `killall firefox`
+
+883. **`kmod`** – Load, unload, and manage kernel modules.  
+    Example: `kmod list`
+
+884. **`less`** – View the contents of a file interactively.  
+    Example: `less file.txt`
+
+885. **`let`** – Perform arithmetic operations in the shell.  
+    Example: `let x=5+3`
+
+886. **`ln`** – Create hard or symbolic links.  
+    Example: `ln -s /path/to/file linkname`
+
+887. **`local`** – Declare variables as local to a function in the shell.  
+    Example: `local var=10`
+
+888. **`locate`** – Find files by name using a prebuilt database.  
+    Example: `locate file.txt`
+
+889. **`logname`** – Display the current user's login name.  
+    Example: `logname`
+
+890. **`lshw`** – Display detailed information about system hardware.  
+    Example: `lshw -short`
+
+891. **`lsblk`** – List information about block devices.  
+    Example: `lsblk`
+
+892. **`lsmod`** – Display currently loaded kernel modules.  
+    Example: `lsmod`
+
+893. **`lspci`** – Display information about PCI devices.  
+    Example: `lspci`
+
+894. **`lsusb`** – List USB devices connected to the system.  
+    Example: `lsusb`
+
+895. **`man`** – Display the manual page for a command.  
+    Example: `man ls`
+
+896. **`mkdir`** – Create directories.  
+    Example: `mkdir new_directory`
+
+897. **`mkfs`** – Create a file system on a disk.  
+    Example: `mkfs.ext4 /dev/sda1`
+
+898. **`mkisofs`** – Create an ISO 9660 filesystem image.  
+    Example: `mkisofs -o image.iso /path/to/files`
+
+899. **`mknod`** – Create block or character device files.  
+    Example: `mknod /dev/mydevice c 10 200`
+
+900. **`more`** – View file contents page by page.  
+    Example: `more file.txt`
+
+## Linux commands from 901 to 1000
+
+901. **`mount`** – Mount a file system.  
+    Example: `mount /dev/sda1 /mnt`
+
+902. **`mpstat`** – Report CPU statistics.  
+    Example: `mpstat`
+
+903. **`mv`** – Move or rename files and directories.  
+    Example: `mv oldname.txt newname.txt`
+
+904. **`namei`** – Follow a path to see the components.  
+    Example: `namei /path/to/file`
+
+905. **`nc`** – Netcat, used for reading or writing network connections.  
+    Example: `nc -l 12345`
+
+906. **`netstat`** – Display network connections, routing tables, and more.  
+    Example: `netstat -tuln`
+
+907. **`nice`** – Set the priority of a process.  
+    Example: `nice -n 10 command`
+
+908. **`nl`** – Number the lines of a file.  
+    Example: `nl file.txt`
+
+909. **`nohup`** – Run a command immune to hangups.  
+    Example: `nohup command &`
+
+910. **`nproc`** – Show the number of processing units available.  
+    Example: `nproc`
+
+911. **`passwd`** – Change user passwords.  
+    Example: `passwd username`
+
+912. **`paste`** – Merge lines of files.  
+    Example: `paste file1.txt file2.txt`
+
+913. **`ping`** – Send ICMP echo requests to network hosts.  
+    Example: `ping google.com`
+
+914. **`pkill`** – Kill processes by name.  
+    Example: `pkill firefox`
+
+915. **`pmap`** – Display memory map of a process.  
+    Example: `pmap 1234`
+
+916. **`pr`** – Format text files for printing.  
+    Example: `pr file.txt`
+
+917. **`printenv`** – Print environment variables.  
+    Example: `printenv PATH`
+
+918. **`ps`** – Display information about active processes.  
+    Example: `ps aux`
+
+919. **`pwd`** – Print the current working directory.  
+    Example: `pwd`
+
+920. **`quota`** – Show disk usage and limits for a user.  
+    Example: `quota -u username`
+
+921. **`quotacheck`** – Check file system for disk quotas.  
+    Example: `quotacheck -avug`
+
+922. **`ram`** – Manage system memory (less common, might be specific to certain distributions).  
+    Example: `ram status`
+
+923. **`reboot`** – Reboot the system.  
+    Example: `reboot`
+
+924. **`renice`** – Change the priority of a running process.  
+    Example: `renice 10 -p 1234`
+
+925. **`rm`** – Remove files or directories.  
+    Example: `rm file.txt`
+
+926. **`rmdir`** – Remove empty directories.  
+    Example: `rmdir emptydir`
+
+927. **`route`** – Show or manipulate the IP routing table.  
+    Example: `route -n`
+
+928. **`rsync`** – Sync files and directories between locations.  
+    Example: `rsync -avz source/ destination/`
+
+929. **`screen`** – Terminal multiplexer to create and manage windows.  
+    Example: `screen -S mysession`
+
+930. **`sed`** – Stream editor for filtering and transforming text.  
+    Example: `sed 's/old/new/' file.txt`
+
+931. **`set`** – Set or display shell options and positional parameters.  
+    Example: `set -o noclobber`
+
+932. **`shutdown`** – Shut down or restart the system.  
+    Example: `shutdown -h now`
+
+933. **`sleep`** – Delay for a specified time.  
+    Example: `sleep 5`
+
+934. **`sort`** – Sort lines in a file or input.  
+    Example: `sort file.txt`
+
+935. **`source`** – Read and execute commands from a file in the current shell.  
+    Example: `source ~/.bashrc`
+
+936. **`split`** – Split a file into pieces.  
+    Example: `split -l 1000 file.txt`
+
+937. **`ssh`** – Securely connect to a remote server via SSH.  
+    Example: `ssh user@hostname`
+
+938. **`stat`** – Display detailed information about a file.  
+    Example: `stat file.txt`
+
+939. **`strace`** – Trace system calls and signals.  
+    Example: `strace ls`
+
+940. **`su`** – Switch to another user or become root.  
+    Example: `su - username`
+
+941. **`sudo`** – Execute a command as another user, typically root.  
+    Example: `sudo ls /root`
+
+942. **`sum`** – Calculate and print a file's checksum.  
+    Example: `sum file.txt`
+
+943. **`sync`** – Synchronize cached writes to persistent storage.  
+    Example: `sync`
+
+944. **`tail`** – Output the last part of a file.  
+    Example: `tail -n 10 file.txt`
+
+945. **`tar`** – Archive and compress files.  
+    Example: `tar -cvf archive.tar file1 file2`
+
+946. **`tee`** – Read from standard input and write to standard output and files.  
+    Example: `echo "Hello" | tee file.txt`
+
+947. **`test`** – Evaluate conditional expressions.  
+    Example: `test -f file.txt && echo "File exists"`
+
+948. **`time`** – Measure the time a command takes to execute.  
+    Example: `time ls`
+
+949. **`times`** – Display user and system times for processes.  
+    Example: `times`
+
+950. **`touch`** – Change file timestamps or create empty files.  
+    Example: `touch file.txt`
+
+951. **`tput`** – Initialize terminal capabilities.  
+    Example: `tput setaf 1` (sets text color to red)
+
+952. **`traceroute`** – Trace the path packets take to a network host.  
+    Example: `traceroute google.com`
+
+953. **`true`** – Do nothing and return a true exit status.  
+    Example: `true`
+
+954. **`umount`** – Unmount a mounted file system.  
+    Example: `umount /mnt`
+
+955. **`unzip`** – Extract files from a zip archive.  
+    Example: `unzip archive.zip`
+
+956. **`uptime`** – Show system uptime and load.  
+    Example: `uptime`
+
+957. **`useradd`** – Add a new user.  
+    Example: `useradd newuser`
+
+958. **`userdel`** – Delete a user.  
+    Example: `userdel username`
+
+959. **`usermod`** – Modify a user account.  
+    Example: `usermod -aG sudo username`
+
+960. **`uuidgen`** – Generate a random UUID.  
+    Example: `uuidgen`
+
+961. **`vdir`** – List directory contents in verbose format.  
+    Example: `vdir /path`
+
+962. **`w`** – Display who is logged in and their activities.  
+    Example: `w`
+
+963. **`wait`** – Wait for a process to complete.  
+    Example: `wait $!`
+
+964. **`watch`** – Execute a program periodically, showing output.  
+    Example: `watch -n 1 df -h`
+
+965. **`wc`** – Count words, lines, and bytes in files.  
+    Example: `wc -l file.txt`
+
+966. **`whereis`** – Locate binary, source, and manual page files for a command.  
+    Example: `whereis ls`
+
+967. **`which`** – Show the full path of shell commands.  
+    Example: `which python`
+
+968. **`whoami`** – Print the current user’s name.  
+    Example: `whoami`
+
+969. **`wpa_cli`** – Control the wpa_supplicant (wireless network configuration).  
+    Example: `wpa_cli status`
+
+970. **`xargs`** – Build and execute command lines from standard input.  
+    Example: `echo "file1 file2" | xargs rm`
+
+971. **`yes`** – Output a string repeatedly until killed.  
+    Example: `yes "Hello"`
+
+972. **`zip`** – Create zip archives.  
+    Example: `zip archive.zip file1 file2`
+
+973. **`zcat`** – Decompress files to stdout.  
+    Example: `zcat file.gz`
+
+974. **`zgrep`** – Search through compressed files using grep.  
+    Example: `zgrep "pattern" file.gz`
+
+975. **`zless`** – View compressed files using less.  
+    Example: `zless file.gz`
+
+976. **`zmore`** – View compressed files using more.  
+    Example: `zmore file.gz`
+
+977. **`zsh`** – Z shell, an extended Bourne shell.  
+    Example: `zsh`
+
+978. **`alias`** – Create shortcuts for commands.  
+    Example: `alias ll='ls -l'`
+
+979. **`unalias`** – Remove alias definitions.  
+    Example: `unalias ll`
+
+980. **`at`** – Schedule a one-time task.  
+    Example: `echo "command" | at 10:00`
+
+981. **`batch`** – Schedule a command to run when system load is low.  
+    Example: `echo "command" | batch`
+
+982. **`chgrp`** – Change group ownership of a file or directory.  
+    Example: `chgrp staff file.txt`
+
+983. **`chown`** – Change ownership of a file or directory.  
+    Example: `chown user:group file.txt`
+
+984. **`chmod`** – Change file permissions.  
+    Example: `chmod 755 file.txt`
+
+985. **`chroot`** – Change the root directory for a command.  
+    Example: `chroot /new_root`
+
+986. **`cmp`** – Compare two files byte by byte.  
+    Example: `cmp file1.txt file2.txt`
+
+987. **`comm`** – Compare two sorted files line by line.  
+    Example: `comm file1.txt file2.txt`
+
+988. **`cp`** – Copy files or directories.  
+    Example: `cp file1.txt file2.txt`
+
+989. **`cpio`** – Copy files to and from archives.  
+    Example: `cpio -id < archive.cpio`
+
+990. **`cut`** – Remove sections from each line of a file.  
+    Example: `cut -f1,2 file.txt`
+
+991. **`df`** – Show disk space usage.  
+    Example: `df -h`
+
+992. **`diff`** – Compare files line by line.  
+    Example: `diff file1.txt file2.txt`
+
+993. **`dir`** – List directory contents in a verbose way.  
+    Example: `dir /path`
+
+994. **`dircolors`** – Set color schemes for `ls`.  
+    Example: `dircolors`
+
+995. **`dirname`** – Extract the directory portion of a path.  
+    Example: `dirname /path/to/file.txt`
+
+996. **`dmesg`** – Show kernel-related messages.  
+    Example: `dmesg | grep error`
+
+997. **`du`** – Show disk usage for files and directories.  
+    Example: `du -sh /path`
+
+998. **`echo`** – Print text or variables to the console.  
+    Example: `echo "Hello, world!"`
+
+999. **`env`** – Print or set environment variables.  
+    Example: `env`
+
+1000. **`expand`** – Convert tabs to spaces in a file.  
+    Example: `expand file.txt`
+    
+
+518. **`ztest`** – Test .zst compressed files for integrity.   Example: `ztest file.zst`
+519. **`zupdate`** – Update .zst compressed files.   Example: `zupdate file.zst`
+520. **`zverify`** – Verify .zst compressed files.   Example: `zverify file.zst`
+521. **`zzz`** – A placeholder command (often used in scripts).   Example: `zzz`
+522. **`a2disconf`** – Disable an Apache configuration file.   Example: `sudo a2disconf example.conf`
+523. **`a2dismod`** – Disable an Apache module.   Example: `sudo a2dismod rewrite`
+524. **`a2dissite`** – Disable an Apache site.   Example: `sudo a2dissite example.com`
+525. **`a2enconf`** – Enable an Apache configuration file.   Example: `sudo a2enconf example.conf`
+526. **`a2enmod`** – Enable an Apache module.   Example: `sudo a2enmod rewrite`
+527. **`a2ensite`** – Enable an Apache site.   Example: `sudo a2ensite example.com`
+528. **`a2query`** – Query Apache configuration.   Example: `a2query -m rewrite`
+529. **`aa-enabled`** – Check if AppArmor is enabled.   Example: `aa-enabled`
+530. **`aa-exec`** – Execute a command under an AppArmor profile.   Example: `aa-exec -p profile_name command`
+531. **`aa-status`** – Display AppArmor status.   Example: `aa-status`
+532. **`aa-teardown`** – Unload all AppArmor profiles.   Example: `sudo aa-teardown`
+533. **`accton`** – Turn on process accounting.   Example: `sudo accton /var/log/account/pacct`
+534. **`add-apt-repository`** – Add a repository to APT sources.   Example: `sudo add-apt-repository ppa:example/ppa`
+535. **`addpart`** – Add a partition to a device.   Example: `sudo addpart /dev/sda 3 1024 2048`
+536. **`agetty`** – Alternative Linux getty.   Example: `agetty tty1 9600`
+537. **`alsamixer`** – ALSA soundcard mixer.   Example: `alsamixer`
+538. **`amidi`** – ALSA MIDI utility.   Example: `amidi -l`
+539. **`amixer`** – ALSA soundcard mixer (command-line).   Example: `amixer sset Master 50%`
+540. **`anacron`** – Run periodic jobs.   Example: `sudo anacron`
+541. **`apache2ctl`** – Apache HTTP server control interface.   Example: `sudo apache2ctl restart`
+542. **`apg`** – Generate random passwords.   Example: `apg -m 12`
+543. **`apm`** – Advanced Power Management utility.   Example: `apm`
+544. **`apmsleep`** – Suspend or hibernate using APM.   Example: `sudo apmsleep suspend`
+545. **`apparmor_parser`** – Load AppArmor profiles.   Example: `sudo apparmor_parser -r /etc/apparmor.d/profile`
+546. **`apply`** – Apply a command to a set of arguments.   Example: `apply "echo" file1 file2`
+547. **`apt-mark`** – Mark or unmark packages as automatically installed.   Example: `sudo apt-mark auto package_name`
+548. **`apt-sortpkgs`** – Sort APT package lists.   Example: `apt-sortpkgs file.list`
+549. **`arj`** – Compress or extract .arj archives.   Example: `arj x archive.arj`
+550. **`arping`** – Send ARP requests to a neighbor.   Example: `arping -I eth0 192.168.1.1`
+551. **`atq`** – Display the at job queue.   Example: `atq`
+552. **`atrm`** – Remove at jobs.   Example: `atrm 1`
+553. **`atrun`** – Run at jobs.   Example: `sudo atrun`
+554. **`authconfig`** – Configure system authentication.   Example: `sudo authconfig --update`
+555. **`authselect`** – Configure system authentication (modern replacement for authconfig).   Example: `sudo authselect select sssd`
+556. **`autoconf`** – Generate configuration scripts.   Example: `autoconf`
+557. **`automake`** – Generate Makefile.in files.   Example: `automake`
+558. **`autoreconf`** – Rebuild configure scripts.   Example: `autoreconf`
+559. **`autoscan`** – Generate a preliminary configure.ac.   Example: `autoscan`
+560. **`autoupdate`** – Update configure.ac to newer standards.   Example: `autoupdate`
+561. **`awk`** – Pattern scanning and processing language.   Example: `awk '{print $1}' file.txt`
+562. **`axel`** – Lightweight command-line download accelerator.   Example: `axel http://example.com/file.txt`
+563. **`badblocks`** – Search for bad blocks on a device.   Example: `sudo badblocks /dev/sda`
+564. **`base32`** – Encode or decode data in base32.   Example: `echo "hello" | base32`
+565. **`base64`** – Encode or decode data in base64.   Example: `echo "hello" | base64`
+566. **`basenc`** – Encode or decode data in various formats.   Example: `basenc --base64 file.txt`
+567. **`bashbug`** – Report a bug in Bash.   Example: `bashbug`
+568. **`batch`** – Schedule commands to run when the system load is low.   Example: `batch`
+569. **`bc`** – Arbitrary precision calculator language.   Example: `echo "5 + 2" | bc`
+570. **`bccmd`** – Send BlueCore commands.   Example: `bccmd -t bcsp /dev/ttyS0`
+571. **`bchunk`** – Convert a CD image to an ISO file.   Example: `bchunk file.bin file.cue file.iso`
+572. **`bdftopcf`** – Convert BDF fonts to PCF format.   Example: `bdftopcf font.bdf`
+573. **`beep`** – Produce a beep sound.   Example: `beep`
+574. **`bg`** – Resume a job in the background.   Example: `bg %1`
+575. **`bind`** – Set or display key bindings.   Example: `bind -P`
+576. **`bison`** – GNU parser generator.   Example: `bison file.y`
+577. **`blkdiscard`** – Discard sectors on a device.   Example: `sudo blkdiscard /dev/sda`
+578. **`blkid`** – Locate/print block device attributes.   Example: `blkid /dev/sda1`
+579. **`blockdev`** – Call block device ioctls.   Example: `sudo blockdev --report /dev/sda`
+580. **`bootctl`** – Manage systemd-boot.   Example: `sudo bootctl status`
+581. **`brctl`** – Manage Ethernet bridges.   Example: `sudo brctl addbr br0`
+582. **`bsdtar`** – Manipulate tar archives.   Example: `bsdtar -xvf archive.tar`
+583. **`btrfs`** – Manage Btrfs filesystems.   Example: `sudo btrfs subvolume create /mnt/subvol`
+584. **`bunzip2`** – Decompress .bz2 files.   Example: `bunzip2 file.bz2`
+585. **`busctl`** – Introspect the D-Bus.   Example: `busctl list`
+586. **`byobu`** – Text-based window manager and terminal multiplexer.   Example: `byobu`
+587. **`bzexe`** – Compress executable files.   Example: `bzexe file`
+588. **`bzgrep`** – Search .bz2 files for a pattern.   Example: `bzgrep "pattern" file.bz2`
+589. **`bzip2recover`** – Recover data from a corrupted .bz2 file.   Example: `bzip2recover file.bz2`
+590. **`bzless`** – View .bz2 files with less.   Example: `bzless file.bz2`
+591. **`bzmore`** – View .bz2 files page by page.   Example: `bzmore file.bz2`
+592. **`c99`** – Compile C programs.   Example: `c99 -o program program.c`
+593. **`cal`** – Display a calendar.   Example: `cal 2025`
+594. **`calibrate_ppa`** – Calibrate a PPA (Pulse Per Second) device.   Example: `sudo calibrate_ppa`
+595. **`capinfo`** – Display capabilities of a file.   Example: `capinfo file`
+596. **`captoinfo`** – Convert termcap to terminfo.   Example: `captoinfo file.termcap`
+597. **`case`** – Conditional statement in shell scripts.   Example: `case $var in pattern) command;; esac`
+598. **`catman`** – Create or update the manual page cache.   Example: `sudo catman`
+599. **`cdrecord`** – Record CDs or DVDs.   Example: `cdrecord dev=/dev/cdrom file.iso`
+600. **`cfdisk`** – Partition table manipulator.   Example: `sudo cfdisk /dev/sda`
+
+
