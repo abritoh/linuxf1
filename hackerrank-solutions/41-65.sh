@@ -286,11 +286,14 @@ sed -E 's/([0-9]+) ([0-9]+) ([0-9]+) ([0-9]+)/\4 \3 \2 \1/'
 # So, we will provide you a number of iterations, and you need to generate the ASCII version 
 # of the Fractal Tree for only those many iterations (or, levels of recursion). 
 #
+# Note: for this recursive solution I had to review others to implement my own, mainly to initialize the
+# canvas before actually generating the Y figures recursively, since this challenge is validated against performace
+# the recursive version decreases the execution time, since avoid multiple bash-arrays creation and allocation.
 #!/bin/bash
 N=0
 T_ROWS=63
 T_COLS=100
-CENTER_POS_0=16
+TRUNK_H_1=16
 declare -A CANVAS
 
 function fn_init_canvas {
@@ -303,7 +306,7 @@ function fn_update_canvas {
     local origin_row=$1
     local origin_col=$2
     local iteration=$3
-    local center_pos=$4
+    local trunk_h=$4
 
     local row=0
     local col=0
@@ -313,29 +316,30 @@ function fn_update_canvas {
     local new_origin_right_col=0
 
     if [[ iteration -gt 0 ]]; then
-        for ((i=0; i<center_pos; i++)); do
+        for ((i=0; i<trunk_h; i++)); do
             CANVAS[$(($origin_row - $i)),$origin_col]=1
             row=$(($origin_row - $i))
         done
 
-        for ((i=1; i<=center_pos; i++)); do
+        for ((i=1; i<=trunk_h; i++)); do
             CANVAS[$(($row-$i)),$(($origin_col - $i))]=1
             new_origin_left_row=$(($row - $i))
             new_origin_left_col=$(($origin_col - $i))
+            
             CANVAS[$(($row-$i)),$(($origin_col + $i))]=1
             new_origin_right_row=$(($row - $i))
             new_origin_right_col=$(($origin_col + $i))
         done
 
-        fn_update_canvas $(($new_origin_left_row  - 1)) $new_origin_left_col  $(($iteration - 1)) $(($center_pos / 2)) # left
-        fn_update_canvas $(($new_origin_right_row - 1)) $new_origin_right_col $(($iteration - 1)) $(($center_pos / 2)) # rigth
+        fn_update_canvas $(($new_origin_left_row  - 1)) $new_origin_left_col  $(($iteration - 1)) $(($trunk_h / 2)) # left
+        fn_update_canvas $(($new_origin_right_row - 1)) $new_origin_right_col $(($iteration - 1)) $(($trunk_h / 2)) # rigth
     fi
 }
 
 function fn_print_canvas {
-    for ((i=1; i<=T_ROWS; i++)); do
-        for ((j=1; j<=T_COLS; j++)); do
-            printf '%s' "${CANVAS[$i,$j]}"
+    for ((r=1; r<=T_ROWS; r++)); do
+        for ((c=1; c<=T_COLS; c++)); do
+            printf '%s' "${CANVAS[$r,$c]}"
         done
         printf "\n"
     done
@@ -343,6 +347,6 @@ function fn_print_canvas {
 
 read N
 fn_init_canvas
-fn_update_canvas $T_ROWS $(($T_COLS / 2)) $N $CENTER_POS_0
+fn_update_canvas $T_ROWS $(($T_COLS / 2)) $N $TRUNK_H_1
 fn_print_canvas
 

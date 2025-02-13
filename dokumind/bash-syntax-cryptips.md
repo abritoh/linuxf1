@@ -7,11 +7,11 @@
 -"-"--------------
      ClusterBR
 
-Document version v1.0.0
+Document version v1.0.1
 ```
 *The minimalistic style, backward compatibility, multiple ways to achieve the same result, and extensive use of special characters, along with the language's inherent concepts of streaming, piping, and redirecting, can make Bash scripting prone to cryptic and obscure syntax. This document summarizes some key features of **Bash scripting** syntax.*
 
-01. **Command Substitution**: Runs command and returns its output, the backtick version is legacy, and $(...) is the preferred modern syntax.
+01. **Command Substitution**: Runs command and returns its output, the `backtick` version is legacy, and `$(...)` is the preferred modern syntax.
 ```bash
 $(command) or `command`
 ```
@@ -19,7 +19,7 @@ $(command) or `command`
 ```bash
 $((expression))
 ```
-03. **Parameter Expansion**: Allows manipulation of variables, including extracting substrings, modifying values, and applying operations, using the ${} syntax.
+03. **Parameter Expansion**: Allows manipulation of variables, including extracting substrings, modifying values, and applying operations, using the` ${}` syntax.
 ```bash
 ${var:2:4}
 ```
@@ -27,7 +27,7 @@ ${var:2:4}
 ```bash
 echo {a,b,c}
 ```
-05. **Parameter Expansion (with default values)**: Returns default if var is unset or null. It's a way of providing default values to variables.
+05. **Parameter Expansion (with default values)**: Returns default if var is unset or `null`. It's a way of providing default values to variables.
 ```bash
 ${var:-default}
 ```
@@ -57,27 +57,31 @@ EOF
 ```bash
 command <<< "string"
 ```
-12. **Array Access**: Accesses the element at the given index of an array. arr[@] and arr[*] refer to the entire array.
+12. **Array Access**: Accesses the element at the given index of an array. `arr[@]` and `arr[*]` refer to the entire array.
 ```bash
 ${arr[index]}
 ```
-13. **Positional Parameters**: Represents the command-line arguments passed to a script (e.g., $1 is the first argument).
+13. **Positional Parameters**: Represents the command-line arguments passed to a script (e.g., `$1` is the first argument).
 ```bash
 $1, $2, ..., $n
 ```
-14. **File Descriptors and Redirection**: Redirects standard error (`2`) to standard output (`1`) or sends output to `/dev/null` to discard it.
+14. **File Descriptors and Redirection**: Redirects standard error (`2`) to standard output (`1`) or sends output to `/dev/null` to ignore it; the output sent to `/dev/null` is ignored.
 ```bash
 2>&1 or 1>/dev/null
 ``` 
 15. **Loop with File Descriptors**: Reads input from a custom file descriptor (here, `3`), allowing more advanced input handling.
 ```bash
-2>&1 or 1>/dev/null
+exec 3< input.txt #-- open file-descriptor
+while read -u 3 line; do
+  echo "Processing: $line"
+done
+exec 3>&- #-- close file-descriptor
 ``` 
 16. **Using `eval` for Command Execution**: Executes the string contained in `$command` as a Bash command. It's dangerous if the input is untrusted.
 ```bash
 eval "$command"
 ``` 
-17. In-Place Editing with `sed`: Edits files in place (i.e., modifies the file directly rather than printing the output to stdout).
+17. **In-Place Editing with `sed`**: Edits files in place (i.e., modifies the file directly rather than printing the output to stdout).
 ```bash
 sed -i 's/foo/bar/' file.txt
 ``` 
@@ -85,7 +89,7 @@ sed -i 's/foo/bar/' file.txt
 ```bash
 if [ -e file ]; then ... fi
 ``` 
-19. **`&&` and `||` for Command Chaining**: Executes command2 only if command1 succeeds (`&&`), and executes command3 if command1 fails (`||`).
+19. **`&&` and `||` for Command Chaining**: Executes `command2` only if `command1` succeeds (`&&`), and executes `command3` if `command1` fails (`||`).
 ```bash
 command1 && command2 || command3
 ``` 
@@ -105,7 +109,7 @@ command | tee file.txt
 ```bash
 shift
 ```
-24. `Trap for Signal Handling`: Defines a set of commands to run when a specific signal (like `SIGINT` for interrupt) is received.
+24. **Trap for Signal Handling**: Defines a set of commands to run when a specific signal (like `SIGINT` for interrupt) is received.
 ```bash
 trap 'commands' SIGINT
 ```
@@ -129,7 +133,7 @@ declare -i count=0
 ```bash
 diff <(command1) <(command2)
 ```
-30. **Using `find` with `exec`**: Finds files and executes a command on each result. The {} is replaced by the found filename.
+30. **Using `find` with `exec`**: Finds files and executes a command on each result. The `{}` is replaced by the found filename.
 ```bash
 find . -name "*.txt" -exec rm {} \;
 ```

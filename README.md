@@ -6,7 +6,7 @@
 -"-"--------------
      ClusterBR
 
-Document version v1.0.1
+Document version v1.0.2
 ```
 
 **Manual pages**, are an essential feature of **Unix-like operating systems**, including **Linux**. Manual pages are pre-installed and contains the official documentation and detailed descriptions of the system commands, utilities, and programming functions.
@@ -510,6 +510,7 @@ Document version v1.0.1
     - **File Systems**: The software layer responsible for managing storage devices, structuring data into files and directories, and ensuring data persistence.
     - **System Calls**: The programming interface that allows user-space applications to request services from the kernel, enabling interaction with system resources.
 
+<div style="page-break-before: always;"></div>
 
 ## **Linux Commands Classification**
 
@@ -568,6 +569,8 @@ Commands related to **System Management** are used for configuring system settin
   -  `$ ` `ifconfig`, `ping`, `netstat`, `traceroute`
 
 Each classification serves a different aspect of system administration, from managing files to handling processes and configuring system resources.
+
+<div style="page-break-before: always;"></div>
 
 ## **LinuxF1**
 

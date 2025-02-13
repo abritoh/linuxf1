@@ -2,6 +2,8 @@
 
 ``` bash
 DANGER, DONT-EVER-DO-IT !!!
+
+Document version v1.0.1
 ```
 
 ![IMG](./../img/hazard-symbol.png)
@@ -81,6 +83,7 @@ Commands that can crash the system or cause it to become unresponsive.
 - `echo 1 > /proc/sys/kernel/sysrq; echo b > /proc/sysrq-trigger` - Triggers an immediate system reboot using the Magic SysRq key.
 
 ---
+<div style="page-break-before: always;"></div>
 
 #### **6. Remote Exploitation or Malware**
 Commands that involve remote exploitation or downloading/executing malicious scripts.
